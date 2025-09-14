@@ -45,9 +45,7 @@
                     <div class="stat-label">Total Bookings</div>
                 </div>
                 <div class="stat-card">
-                    <div class="stat-number">
-                        {{ bookings|selectattr('booking_time', 'defined')|selectattr('booking_time', 'greaterthan', (None|today - timedelta(days=7)).isoformat())|list|length if bookings else 0 }}
-                    </div>
+                    <div class="stat-number">{{ recent_bookings_count }}</div>
                     <div class="stat-label">This Week</div>
                 </div>
             </div>

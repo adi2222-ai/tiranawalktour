@@ -9,7 +9,7 @@ app.secret_key = os.environ.get('SESSION_SECRET', 'your-secret-key-here')
 
 # Admin credentials (built-in)
 ADMIN_USERNAME = "TiTirana"
-ADMIN_PASSWORD = "TiRirana"
+ADMIN_PASSWORD = "TiTirana"
 
 # Load tour data
 def load_tours():
@@ -150,7 +150,24 @@ def admin_dashboard():
     except FileNotFoundError:
         bookings = []
     
-    return render_template('admin/dashboard.html', tours=tours, bookings=bookings)
+    # Calculate recent bookings (last 7 days)
+    from datetime import datetime, timedelta
+    week_ago = datetime.now() - timedelta(days=7)
+    recent_bookings_count = 0
+    
+    for booking in bookings:
+        if 'booking_time' in booking:
+            try:
+                booking_date = datetime.fromisoformat(booking['booking_time'].replace('Z', '+00:00'))
+                if booking_date >= week_ago:
+                    recent_bookings_count += 1
+            except (ValueError, TypeError):
+                continue
+    
+    return render_template('admin/dashboard.html', 
+                         tours=tours, 
+                         bookings=bookings, 
+                         recent_bookings_count=recent_bookings_count)
 
 @app.route('/admin/tours')
 @admin_required
