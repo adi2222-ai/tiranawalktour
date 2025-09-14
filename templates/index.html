@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <h1 class="hero-title">Discover Tirana</h1>
+        <p class="hero-subtitle">Experience Albania's vibrant capital through authentic walking tours and cultural adventures</p>
+        <a href="#tours" class="cta-button">Explore Tours</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1604608672516-05e34d600b39?w=1200&h=800&fit=crop" alt="Tirana Skyline">
+    </div>
+</section>
+
+<!-- Why Albania Section -->
+<section class="why-albania">
+    <div class="container">
+        <h2>Why Visit Albania?</h2>
+        <p class="section-intro">Albania is Europe's best-kept secret, offering incredible history, stunning landscapes, and warm hospitality at unbeatable prices.</p>
+        
+        <div class="highlights-grid">
+            <div class="highlight-card">
+                <img src="https://images.unsplash.com/photo-1592598631132-8bd50b2b8a94?w=400&h=300&fit=crop" alt="Skanderbeg Square">
+                <h3>Skanderbeg Square</h3>
+                <p>The heart of Tirana, surrounded by important government buildings and cultural institutions.</p>
+            </div>
+            <div class="highlight-card">
+                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop" alt="Bunk'Art Museum">
+                <h3>Bunk'Art Museums</h3>
+                <p>Fascinating underground bunkers turned into multimedia museums showcasing Albania's communist past.</p>
+            </div>
+            <div class="highlight-card">
+                <img src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=400&h=300&fit=crop" alt="Et'hem Bey Mosque">
+                <h3>Et'hem Bey Mosque</h3>
+                <p>Beautiful 18th-century Ottoman mosque with intricate frescoes and peaceful courtyard.</p>
+            </div>
+            <div class="highlight-card">
+                <img src="https://images.unsplash.com/photo-1464822759534-21d2f68b3bb6?w=400&h=300&fit=crop" alt="Dajti Mountain">
+                <h3>Dajti Mountain</h3>
+                <p>Take the cable car up for breathtaking panoramic views of the city and Adriatic coast.</p>
+            </div>
+            <div class="highlight-card">
+                <img src="https://images.unsplash.com/photo-1530693713048-3b88e9eb7bd8?w=400&h=300&fit=crop" alt="National History Museum">
+                <h3>National History Museum</h3>
+                <p>Albania's largest museum featuring artifacts from prehistoric times to the present day.</p>
+            </div>
+            <div class="highlight-card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Traditional Albanian Food">
+                <h3>Culinary Delights</h3>
+                <p>Taste authentic Albanian cuisine influenced by Ottoman, Italian, and Mediterranean traditions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Tours Section -->
+<section id="tours" class="tours-section">
+    <div class="container">
+        <h2>Featured Tours</h2>
+        <p class="section-intro">Choose from our carefully curated selection of tours designed to showcase the best of Tirana and Albanian culture.</p>
+        
+        <div class="tours-grid">
+            {% for tour in tours %}
+            <div class="tour-card">
+                <div class="tour-image">
+                    <img src="{{ tour.images[0] }}" alt="{{ tour.title }}">
+                    <div class="tour-price">€{{ tour.price }}</div>
+                </div>
+                <div class="tour-content">
+                    <h3>{{ tour.title }}</h3>
+                    <p class="tour-duration">{{ tour.duration }}</p>
+                    <p class="tour-description">{{ tour.short_description }}</p>
+                    <a href="{{ url_for('tour_detail', tour_id=tour.id) }}" class="tour-button">Learn More</a>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <p class="section-intro">Ready to explore Tirana? Contact us today to book your authentic Albanian adventure.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info@tiranawalktour.com">info@tiranawalktour.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📱 WhatsApp</h3>
+                    <p><a href="https://wa.me/+35569123456" target="_blank">+355 69 123 4567</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>Skanderbeg Square, Tirana, Albania</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🕐 Business Hours</h3>
+                    <p>Daily: 9:00 AM - 6:00 PM</p>
+                </div>
+            </div>
+            
+            <div class="contact-cta">
+                <h3>Book Your Tour Today</h3>
+                <p>Experience the best of Tirana with our expert local guides. All tours include professional guidance, small group sizes, and authentic cultural insights.</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/+35569123456" class="cta-button whatsapp-btn" target="_blank">WhatsApp Us</a>
+                    <a href="mailto:info@tiranawalktour.com" class="cta-button email-btn">Send Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
