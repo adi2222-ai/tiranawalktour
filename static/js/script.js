@@ -29,12 +29,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            
+            // If we're not on the homepage, go to homepage first
+            if (window.location.pathname !== '/' && href.startsWith('#')) {
+                window.location.href = '/' + href;
+                return;
+            }
+            
             e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
+            const target = document.querySelector(href);
             if (target) {
-                target.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
+                const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                const targetPosition = target.offsetTop - navbarHeight - 20;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
                 });
             }
         });
