@@ -4,136 +4,152 @@
     "title": "Tirana Historical Walking Tour",
     "short_description": "Discover the heart of Albania's capital with our comprehensive walking tour through Tirana's most iconic landmarks.",
     "long_description": "Join us for an unforgettable journey through Tirana's rich history and vibrant culture. This tour takes you through the city's most significant sites, from the Ottoman era to communist times and modern developments. You'll learn about Albania's fascinating past while experiencing the dynamic energy of this emerging European capital.",
-    "price": 25,
+    "price": 50,
     "duration": "3 hours",
     "starting_point": "Skanderbeg Square",
     "schedule": [
-      "2025-09-15T10:00:00",
-      "2025-09-15T14:00:00",
-      "2025-09-16T10:00:00",
-      "2025-09-16T14:00:00",
-      "2025-09-17T10:00:00",
+      "2025-09-15T10:00:00\r",
+      "2025-09-15T14:00:00\r",
+      "2025-09-16T10:00:00\r",
+      "2025-09-16T14:00:00\r",
+      "2025-09-17T10:00:00\r",
       "2025-09-17T14:00:00"
     ],
     "images": [
-      "https://www.spottedbylocals.com/wp-content/uploads/2024/10/Castle-of-Tirana-1024x683.jpg.webp",
+      "https://www.spottedbylocals.com/wp-content/uploads/2024/10/Castle-of-Tirana-1024x683.jpg.webp\r",
       "https://www.spottedbylocals.com/wp-content/uploads/2024/10/Castle-of-Tirana-1024x683.jpg.webp"
     ],
     "highlights": [
-      "Skanderbeg Square - the heart of Tirana",
-      "Et'hem Bey Mosque - 18th-century Ottoman architecture",
-      "National History Museum - Albania's largest museum",
-      "Clock Tower - panoramic city views",
+      "Skanderbeg Square - the heart of Tirana\r",
+      "Et'hem Bey Mosque - 18th-century Ottoman architecture\r",
+      "National History Museum - Albania's largest museum\r",
+      "Clock Tower - panoramic city views\r",
       "Bunk'Art 1 - Cold War bunker turned museum"
     ],
     "included": [
-      "Professional English-speaking guide",
-      "Walking tour of historical sites",
-      "Entry to Clock Tower",
+      "Professional English-speaking guide\r",
+      "Walking tour of historical sites\r",
+      "Entry to Clock Tower\r",
       "Small group experience (max 15 people)"
     ],
     "meeting_point_details": "Meet at the Skanderbeg Monument in the center of Skanderbeg Square. Look for the guide with a red umbrella.",
-    "languages": ["English", "Italian", "German"]
+    "languages": [
+      "English",
+      "Italian",
+      "German"
+    ]
   },
   {
     "id": "dajti-mountain-adventure",
     "title": "Dajti Mountain & Cable Car Experience",
     "short_description": "Take the cable car up Dajti Mountain for breathtaking views of Tirana and the Albanian coastline.",
     "long_description": "Experience Albania's natural beauty with a trip to Dajti Mountain National Park. Take the modern cable car system up to 1,000 meters above sea level for spectacular panoramic views. Enjoy hiking trails, traditional Albanian cuisine at mountain restaurants, and fresh mountain air just minutes from downtown Tirana.",
-    "price": 35,
+    "price": 50,
     "duration": "4 hours",
     "starting_point": "Dajti Ekspres Cable Car Station",
     "schedule": [
-      "2025-09-15T09:00:00",
-      "2025-09-15T13:00:00",
-      "2025-09-16T09:00:00",
+      "2025-09-15T09:00:00\r",
+      "2025-09-15T13:00:00\r",
+      "2025-09-16T09:00:00\r",
       "2025-09-16T13:00:00"
     ],
     "images": [
-      "https://albaniatourguide.com/wp-content/uploads/2020/12/Dajti-cable-car-Shutterstock-1200-68.jpg",
+      "https://albaniatourguide.com/wp-content/uploads/2020/12/Dajti-cable-car-Shutterstock-1200-68.jpg\r",
       "https://albaniatourguide.com/wp-content/uploads/2020/12/Dajti-cable-car-Shutterstock-1200-68.jpg"
     ],
     "highlights": [
-      "Cable car ride with panoramic views",
-      "Dajti Mountain National Park exploration",
-      "Traditional Albanian mountain cuisine",
-      "Hiking trails for all levels",
+      "Cable car ride with panoramic views\r",
+      "Dajti Mountain National Park exploration\r",
+      "Traditional Albanian mountain cuisine\r",
+      "Hiking trails for all levels\r",
       "Adventure park activities"
     ],
     "included": [
-      "Round-trip cable car tickets",
-      "Professional mountain guide",
-      "Traditional lunch at mountain restaurant",
+      "Round-trip cable car tickets\r",
+      "Professional mountain guide\r",
+      "Traditional lunch at mountain restaurant\r",
       "Hiking equipment if needed"
     ],
     "meeting_point_details": "Meet at the Dajti Ekspres Cable Car Station entrance. Transportation from city center can be arranged.",
-    "languages": ["English", "Albanian", "Italian"]
+    "languages": [
+      "English",
+      "Albanian",
+      "Italian"
+    ]
   },
   {
     "id": "bunk-art-communist-history",
     "title": "Communist History & Bunk'Art Museums",
     "short_description": "Explore Albania's communist past through the fascinating Bunk'Art underground bunker museums.",
     "long_description": "Delve deep into Albania's communist era with visits to both Bunk'Art museums. These former military bunkers have been transformed into multimedia museums showcasing Albania's history from 1912 to 1991. Learn about life under Enver Hoxha's regime, see authentic artifacts, and understand how Albania became one of the world's most isolated countries.",
-    "price": 30,
+    "price": 50,
     "duration": "3.5 hours",
     "starting_point": "Bunk'Art 1 Entrance",
     "schedule": [
-      "2025-09-15T10:30:00",
-      "2025-09-16T10:30:00",
+      "2025-09-15T10:30:00\r",
+      "2025-09-16T10:30:00\r",
       "2025-09-17T10:30:00"
     ],
     "images": [
-      "https://media.bookmybooking.com/cache/uploads/filemanager/catalog/TOUR_ACTIVITY/ALBANIA/BUNK_ART_2/01-840x345.webp",
+      "https://media.bookmybooking.com/cache/uploads/filemanager/catalog/TOUR_ACTIVITY/ALBANIA/BUNK_ART_2/01-840x345.webp\r",
       "https://media.bookmybooking.com/cache/uploads/filemanager/catalog/TOUR_ACTIVITY/ALBANIA/BUNK_ART_2/01-840x345.webp"
     ],
     "highlights": [
-      "Bunk'Art 1 - former government nuclear bunker",
-      "Bunk'Art 2 - Ministry of Interior bunker",
-      "Authentic communist-era artifacts",
-      "Interactive multimedia exhibitions",
+      "Bunk'Art 1 - former government nuclear bunker\r",
+      "Bunk'Art 2 - Ministry of Interior bunker\r",
+      "Authentic communist-era artifacts\r",
+      "Interactive multimedia exhibitions\r",
       "Stories of survival and resistance"
     ],
     "included": [
-      "Entry tickets to both Bunk'Art museums",
-      "Expert historian guide",
-      "Audio guide system",
+      "Entry tickets to both Bunk'Art museums\r",
+      "Expert historian guide\r",
+      "Audio guide system\r",
       "Transportation between sites"
     ],
     "meeting_point_details": "Meet at the Bunk'Art 1 entrance on Fadil Deliu Street. Look for the guide with a blue badge.",
-    "languages": ["English", "French", "Albanian"]
+    "languages": [
+      "English",
+      "French",
+      "Albanian"
+    ]
   },
   {
     "id": "food-culture-tour",
     "title": "Tirana Food & Culture Experience",
     "short_description": "Taste authentic Albanian cuisine while exploring local markets, traditional restaurants, and cultural sites.",
     "long_description": "Immerse yourself in Albanian culinary traditions with this comprehensive food and culture tour. Visit local markets, taste traditional dishes, learn about Albanian coffee culture, and discover how cuisine reflects the country's diverse cultural influences from Ottoman, Italian, and Balkan traditions.",
-    "price": 45,
+    "price": 50,
     "duration": "4.5 hours",
     "starting_point": "New Bazaar (Pazari i Ri)",
     "schedule": [
-      "2025-09-15T11:00:00",
-      "2025-09-16T11:00:00",
+      "2025-09-15T11:00:00\r",
+      "2025-09-16T11:00:00\r",
       "2025-09-17T11:00:00"
     ],
     "images": [
-      "https://www.ariatravelalbania.com/wp-content/uploads/2024/03/mrizi_zanave_table_organic_food.jpeg.webp",
+      "https://www.ariatravelalbania.com/wp-content/uploads/2024/03/mrizi_zanave_table_organic_food.jpeg.webp\r",
       "https://www.ariatravelalbania.com/wp-content/uploads/2024/03/mrizi_zanave_table_organic_food.jpeg.webp"
     ],
     "highlights": [
-      "New Bazaar fresh market exploration",
-      "Traditional byrek and bakery tastings",
-      "Albanian coffee ceremony",
-      "Local restaurant experiences",
+      "New Bazaar fresh market exploration\r",
+      "Traditional byrek and bakery tastings\r",
+      "Albanian coffee ceremony\r",
+      "Local restaurant experiences\r",
       "Raki tasting (national spirit)"
     ],
     "included": [
-      "Professional food guide",
-      "All food and drink tastings",
-      "Market tour and explanations",
-      "Traditional 3-course lunch",
+      "Professional food guide\r",
+      "All food and drink tastings\r",
+      "Market tour and explanations\r",
+      "Traditional 3-course lunch\r",
       "Recipe cards to take home"
     ],
     "meeting_point_details": "Meet at the main entrance of New Bazaar (Pazari i Ri) near the fountain. Look for the guide with a green apron.",
-    "languages": ["English", "Spanish", "Albanian"]
+    "languages": [
+      "English",
+      "Spanish",
+      "Albanian"
+    ]
   }
 ]
