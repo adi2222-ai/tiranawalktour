@@ -1,20 +1,163 @@
-# English translations for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
-# This file is distributed under the same license as the PROJECT project.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
-#
+
+# English translations for Albania Walk Tour.
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-09-15 10:02+0000\n"
-"PO-Revision-Date: 2025-09-15 10:02+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Project-Id-Version: 1.0\n"
 "Language: en\n"
-"Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
-"Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.17.0\n"
 
+msgid "Your Personal Albania Adventure Awaits"
+msgstr "Your Personal Albania Adventure Awaits"
+
+msgid "Discover hidden gems, authentic experiences, and create unforgettable memories with our personalized tours designed just for you"
+msgstr "Discover hidden gems, authentic experiences, and create unforgettable memories with our personalized tours designed just for you"
+
+msgid "Tell us your interests and we'll create your perfect Albanian journey"
+msgstr "Tell us your interests and we'll create your perfect Albanian journey"
+
+msgid "History & Culture"
+msgstr "History & Culture"
+
+msgid "Beaches & Nature"
+msgstr "Beaches & Nature"
+
+msgid "Food & Wine"
+msgstr "Food & Wine"
+
+msgid "Photography"
+msgstr "Photography"
+
+msgid "Adventure"
+msgstr "Adventure"
+
+msgid "Start Planning My Trip"
+msgstr "Start Planning My Trip"
+
+msgid "Get Personal Consultation"
+msgstr "Get Personal Consultation"
+
+msgid "Happy Travelers"
+msgstr "Happy Travelers"
+
+msgid "Average Rating"
+msgstr "Average Rating"
+
+msgid "Local Support"
+msgstr "Local Support"
+
+msgid "UNESCO World Heritage Sites"
+msgstr "UNESCO World Heritage Sites"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "About"
+msgstr "About"
+
+msgid "Tours"
+msgstr "Tours"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Curated Just For You"
+msgstr "Curated Just For You"
+
+msgid "Based on what our international guests love most about Albania"
+msgstr "Based on what our international guests love most about Albania"
+
+msgid "Culture Enthusiast"
+msgstr "Culture Enthusiast"
+
+msgid "Discover Ottoman architecture, ancient castles, and vibrant local traditions"
+msgstr "Discover Ottoman architecture, ancient castles, and vibrant local traditions"
+
+msgid "Traditional craft workshops"
+msgstr "Traditional craft workshops"
+
+msgid "Local family visits"
+msgstr "Local family visits"
+
+msgid "Explore Cultural Tours"
+msgstr "Explore Cultural Tours"
+
+msgid "Nature Lover"
+msgstr "Nature Lover"
+
+msgid "Pristine beaches, crystal-clear springs, and dramatic mountain landscapes"
+msgstr "Pristine beaches, crystal-clear springs, and dramatic mountain landscapes"
+
+msgid "Albanian Riviera beaches"
+msgstr "Albanian Riviera beaches"
+
+msgid "Blue Eye natural spring"
+msgstr "Blue Eye natural spring"
+
+msgid "Mountain hiking trails"
+msgstr "Mountain hiking trails"
+
+msgid "See Nature Tours"
+msgstr "See Nature Tours"
+
+msgid "Foodie Explorer"
+msgstr "Foodie Explorer"
+
+msgid "Taste authentic Albanian cuisine and learn cooking secrets from locals"
+msgstr "Taste authentic Albanian cuisine and learn cooking secrets from locals"
+
+msgid "Traditional cooking classes"
+msgstr "Traditional cooking classes"
+
+msgid "Wine tasting experiences"
+msgstr "Wine tasting experiences"
+
+msgid "Local market tours"
+msgstr "Local market tours"
+
+msgid "Discover Food Tours"
+msgstr "Discover Food Tours"
+
+msgid "Your Perfect Albanian Experience"
+msgstr "Your Perfect Albanian Experience"
+
+msgid "Handpicked tours based on what international travelers love most about Albania"
+msgstr "Handpicked tours based on what international travelers love most about Albania"
+
+msgid "All Tours"
+msgstr "All Tours"
+
+msgid "Culture & History"
+msgstr "Culture & History"
+
+msgid "Nature & Adventure"
+msgstr "Nature & Adventure"
+
+msgid "Food & Lifestyle"
+msgstr "Food & Lifestyle"
+
+msgid "Multi-Day Journeys"
+msgstr "Multi-Day Journeys"
+
+msgid "Let's Plan Your Dream Trip to Albania"
+msgstr "Let's Plan Your Dream Trip to Albania"
+
+msgid "Our local experts speak your language and understand what makes a perfect vacation for international travelers"
+msgstr "Our local experts speak your language and understand what makes a perfect vacation for international travelers"
+
+msgid "FREE Personal Consultation"
+msgstr "FREE Personal Consultation"
+
+msgid "30-minute video call with local expert"
+msgstr "30-minute video call with local expert"
+
+msgid "Customized itinerary based on your interests"
+msgstr "Customized itinerary based on your interests"
+
+msgid "Budget-friendly recommendations"
+msgstr "Budget-friendly recommendations"
+
+msgid "Real-time local tips and insights"
+msgstr "Real-time local tips and insights"
+
+msgid "Available in:"
+msgstr "Available in:"
