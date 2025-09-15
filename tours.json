@@ -1,5 +1,59 @@
 [
   {
+    "id": "albania-week-tour",
+    "title": "Albania Discovery Week - 6 Days Complete Tour",
+    "short_description": "Experience the best of Albania in 6 unforgettable days - from Tirana's history to the Albanian Riviera's stunning beaches.",
+    "long_description": "Join us for the ultimate Albanian adventure! This comprehensive 6-day tour takes you from the bustling capital of Tirana through ancient cities, UNESCO World Heritage sites, pristine beaches, and dramatic mountain landscapes. Experience Albania's rich history, vibrant culture, delicious cuisine, and warm hospitality while staying in carefully selected accommodations. Perfect for first-time visitors who want to see the best of what Albania has to offer.",
+    "price": 450,
+    "duration": "6 days / 5 nights",
+    "starting_point": "Tirana International Airport",
+    "schedule": [
+      "2025-04-12T08:00:00",
+      "2025-04-26T08:00:00",
+      "2025-05-10T08:00:00",
+      "2025-05-24T08:00:00",
+      "2025-06-07T08:00:00",
+      "2025-06-21T08:00:00",
+      "2025-10-05T08:00:00",
+      "2025-10-19T08:00:00"
+    ],
+    "images": [
+      "https://www.albaniantourism.com/wp-content/uploads/2020/04/Butrint-National-Park-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/07/Gjirokaster-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2018/09/Saranda-Albania-Riviera.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/04/Blue-Eye-Spring-Albania.jpg"
+    ],
+    "highlights": [
+      "Tirana city tour including Skanderbeg Square and Bunk'Art museums",
+      "UNESCO World Heritage site of Berat - 'City of a Thousand Windows'",
+      "Ancient Apollonia archaeological site",
+      "Gjirokaster Castle and Ottoman bazaar exploration",
+      "Butrint National Park - UNESCO World Heritage archaeological site",
+      "Blue Eye natural spring - crystal clear turquoise waters",
+      "Albanian Riviera beaches in Saranda and Ksamil",
+      "Traditional Albanian cuisine experiences",
+      "Llogara Pass mountain scenery",
+      "Professional guide throughout the entire journey"
+    ],
+    "included": [
+      "5 nights accommodation in 3-star hotels with breakfast",
+      "Professional English-speaking guide for entire tour",
+      "All transportation in comfortable air-conditioned vehicle",
+      "All entrance fees to museums and archaeological sites",
+      "Daily breakfast at hotels",
+      "2 traditional Albanian dinners",
+      "Airport pickup and drop-off",
+      "Small group experience (maximum 16 people)"
+    ],
+    "meeting_point_details": "Pick up from Tirana International Airport (Mother Teresa Airport) or central Tirana hotels. Detailed meeting instructions will be provided upon booking confirmation.",
+    "languages": [
+      "English",
+      "Italian",
+      "German",
+      "Albanian"
+    ]
+  },
+  {
     "id": "tirana-walking-tour",
     "title": "Tirana Historical Walking Tour",
     "short_description": "Discover the heart of Albania's capital with our comprehensive walking tour through Tirana's most iconic landmarks.",
