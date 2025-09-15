@@ -180,12 +180,37 @@ msgstr "Inizia a Pianificare Oggi"
 
 #: templates/index.html:132
 msgid "Get personalized recommendations, custom itineraries, and insider tips from our Albanian travel experts. All tours include professional multilingual guides and authentic local experiences."
-msgstr "Ottieni raccomandazioni personalizzate, itinerari su misura e consigli da insider dai nostri esperti di viaggi albanesi. Tutti i tour includono guide professionali multilingue e autentiche esperienze locali."
+msgstr "Tutti i tour includono guide professionali multilingue e esperienze locali autentiche."
 
-#: templates/index.html:134
+#: templates/index.html:94
 msgid "WhatsApp Us"
-msgstr "Scrivici su WhatsApp"
+msgstr "Contattaci su WhatsApp"
 
-#: templates/index.html:135
+#: templates/index.html:95
 msgid "Send Email"
 msgstr "Invia Email"
+
+#: templates/base.html:footer
+msgid "Discover the beauty and history of Albania's vibrant capital with our expert local guides."
+msgstr "Scopri la bellezza e la storia della vibrante capitale dell'Albania con le nostre guide locali esperte."
+
+msgid "Quick Links"
+msgstr "Link Rapidi"
+
+msgid "Contact Info"
+msgstr "Informazioni di Contatto"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Phone"
+msgstr "Telefono"
+
+msgid "Location"
+msgstr "Posizione"
+
+msgid "Tirana, Albania"
+msgstr "Tirana, Albania"
+
+msgid "All rights reserved."
+msgstr "Tutti i diritti riservati."

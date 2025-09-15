@@ -67,15 +67,19 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             e.preventDefault();
-            const target = document.querySelector(href);
-            if (target) {
-                const navbarHeight = document.querySelector('.navbar').offsetHeight;
-                const targetPosition = target.offsetTop - navbarHeight - 20;
-                
-                window.scrollTo({
-                    top: targetPosition,
-                    behavior: 'smooth'
-                });
+            
+            // Validate selector before using it
+            if (href.length > 1) {
+                const target = document.querySelector(href);
+                if (target) {
+                    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+                    const targetPosition = target.offsetTop - navbarHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
             }
         });
     });

@@ -139,10 +139,37 @@ msgid "Start Planning Today"
 msgstr "Beginnen Sie heute mit der Planung"
 
 msgid "Get personalized recommendations, custom itineraries, and insider tips from our Albanian travel experts. All tours include professional multilingual guides and authentic local experiences."
-msgstr "Erhalten Sie persönliche Empfehlungen, maßgeschneiderte Reiserouten und Insider-Tipps von unseren albanischen Reiseexperten. Alle Touren beinhalten professionelle mehrsprachige Führer und authentische lokale Erlebnisse."
+msgstr "Alle Touren beinhalten professionelle mehrsprachige Guides und authentische lokale Erfahrungen."
 
+#: templates/index.html:94
 msgid "WhatsApp Us"
 msgstr "WhatsApp uns"
 
+#: templates/index.html:95
 msgid "Send Email"
 msgstr "E-Mail senden"
+
+#: templates/base.html:footer
+msgid "Discover the beauty and history of Albania's vibrant capital with our expert local guides."
+msgstr "Entdecken Sie die Schönheit und Geschichte von Albaniens lebendiger Hauptstadt mit unseren erfahrenen lokalen Guides."
+
+msgid "Quick Links"
+msgstr "Schnelle Links"
+
+msgid "Contact Info"
+msgstr "Kontaktinformationen"
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Phone"
+msgstr "Telefon"
+
+msgid "Location"
+msgstr "Standort"
+
+msgid "Tirana, Albania"
+msgstr "Tirana, Albanien"
+
+msgid "All rights reserved."
+msgstr "Alle Rechte vorbehalten."

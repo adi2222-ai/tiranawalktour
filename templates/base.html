@@ -38,23 +38,23 @@
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Albania Walk Tour</h3>
-                <p>Discover the beauty and history of Albania's vibrant capital with our expert local guides.</p>
+                <p>{{ _('Discover the beauty and history of Albania\'s vibrant capital with our expert local guides.') }}</p>
             </div>
             <div class="footer-section">
-                <h4>Quick Links</h4>
-                <a href="{{ url_for('index') }}">Home</a>
-                <a href="{{ url_for('about') }}">About</a>
-                <a href="#tours">Tours</a>
+                <h4>{{ _('Quick Links') }}</h4>
+                <a href="{{ url_for('index') }}">{{ _('Home') }}</a>
+                <a href="{{ url_for('about') }}">{{ _('About') }}</a>
+                <a href="#tours">{{ _('Tours') }}</a>
             </div>
             <div class="footer-section">
-                <h4>Contact Info</h4>
-                <p>Email: info@albaniawalktour.com</p>
-                <p>Phone: +355 69 123 4567</p>
-                <p>Location: Tirana, Albania</p>
+                <h4>{{ _('Contact Info') }}</h4>
+                <p>{{ _('Email') }}: info@albaniawalktour.com</p>
+                <p>{{ _('Phone') }}: +355 69 123 4567</p>
+                <p>{{ _('Location') }}: {{ _('Tirana, Albania') }}</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Albania Walk Tour. All rights reserved.</p>
+            <p>&copy; 2025 Albania Walk Tour. {{ _('All rights reserved.') }}</p>
         </div>
     </footer>
 
