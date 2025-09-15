@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify, redirect, url_for, session, flash
+from flask_babel import Babel, gettext, ngettext, get_locale
 import json
 import os
 from datetime import datetime
@@ -6,6 +7,41 @@ import uuid
 
 app = Flask(__name__)
 app.secret_key = os.environ.get('SESSION_SECRET', 'your-secret-key-here')
+
+# Babel Configuration
+babel = Babel(app)
+app.config['LANGUAGES'] = {
+    'en': 'English',
+    'de': 'Deutsch',
+    'it': 'Italiano', 
+    'ar': 'العربية'
+}
+app.config['BABEL_DEFAULT_LOCALE'] = 'en'
+app.config['BABEL_DEFAULT_TIMEZONE'] = 'UTC'
+
+# Template helper function for translations
+@app.template_global()
+def _(string):
+    return gettext(string)
+
+def get_locale():
+    # 1. Check URL parameter
+    if request.args.get('lang'):
+        session['language'] = request.args.get('lang')
+    # 2. Check session
+    if 'language' in session and session['language'] in app.config['LANGUAGES']:
+        return session['language']
+    # 3. Check browser preference
+    return request.accept_languages.best_match(app.config['LANGUAGES'].keys()) or app.config['BABEL_DEFAULT_LOCALE']
+
+babel.init_app(app, locale_selector=get_locale)
+
+# Language switching route
+@app.route('/set_language/<language>')
+def set_language(language=None):
+    if language and language in app.config['LANGUAGES']:
+        session['language'] = language
+    return redirect(request.referrer or url_for('index'))
 
 # Admin credentials (built-in)
 ADMIN_USERNAME = "TiTirana"
