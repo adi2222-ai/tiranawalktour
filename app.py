@@ -219,19 +219,19 @@ def admin_add_tour():
         tours = load_tours()
         
         new_tour = {
-            'id': request.form.get('id'),
-            'title': request.form.get('title'),
-            'short_description': request.form.get('short_description'),
-            'long_description': request.form.get('long_description'),
-            'price': int(request.form.get('price')),
-            'duration': request.form.get('duration'),
-            'starting_point': request.form.get('starting_point'),
-            'schedule': request.form.get('schedule').split('\n'),
-            'images': request.form.get('images').split('\n'),
-            'highlights': request.form.get('highlights').split('\n'),
-            'included': request.form.get('included').split('\n'),
-            'meeting_point_details': request.form.get('meeting_point_details'),
-            'languages': request.form.get('languages').split(',')
+            'id': request.form.get('id') or '',
+            'title': request.form.get('title') or '',
+            'short_description': request.form.get('short_description') or '',
+            'long_description': request.form.get('long_description') or '',
+            'price': int(request.form.get('price') or 0),
+            'duration': request.form.get('duration') or '',
+            'starting_point': request.form.get('starting_point') or '',
+            'schedule': (request.form.get('schedule') or '').split('\n'),
+            'images': (request.form.get('images') or '').split('\n'),
+            'highlights': (request.form.get('highlights') or '').split('\n'),
+            'included': (request.form.get('included') or '').split('\n'),
+            'meeting_point_details': request.form.get('meeting_point_details') or '',
+            'languages': (request.form.get('languages') or '').split(',')
         }
         
         tours.append(new_tour)
@@ -255,18 +255,18 @@ def admin_edit_tour(tour_id):
         return redirect(url_for('admin_tours'))
     
     if request.method == 'POST':
-        tour['title'] = request.form.get('title')
-        tour['short_description'] = request.form.get('short_description')
-        tour['long_description'] = request.form.get('long_description')
-        tour['price'] = int(request.form.get('price'))
-        tour['duration'] = request.form.get('duration')
-        tour['starting_point'] = request.form.get('starting_point')
-        tour['schedule'] = request.form.get('schedule').split('\n')
-        tour['images'] = request.form.get('images').split('\n')
-        tour['highlights'] = request.form.get('highlights').split('\n')
-        tour['included'] = request.form.get('included').split('\n')
-        tour['meeting_point_details'] = request.form.get('meeting_point_details')
-        tour['languages'] = [lang.strip() for lang in request.form.get('languages').split(',')]
+        tour['title'] = request.form.get('title') or tour.get('title', '')
+        tour['short_description'] = request.form.get('short_description') or tour.get('short_description', '')
+        tour['long_description'] = request.form.get('long_description') or tour.get('long_description', '')
+        tour['price'] = int(request.form.get('price') or tour.get('price', 0))
+        tour['duration'] = request.form.get('duration') or tour.get('duration', '')
+        tour['starting_point'] = request.form.get('starting_point') or tour.get('starting_point', '')
+        tour['schedule'] = (request.form.get('schedule') or '').split('\n')
+        tour['images'] = (request.form.get('images') or '').split('\n')
+        tour['highlights'] = (request.form.get('highlights') or '').split('\n')
+        tour['included'] = (request.form.get('included') or '').split('\n')
+        tour['meeting_point_details'] = request.form.get('meeting_point_details') or tour.get('meeting_point_details', '')
+        tour['languages'] = [lang.strip() for lang in (request.form.get('languages') or '').split(',') if lang.strip()]
         
         with open('tours.json', 'w') as f:
             json.dump(tours, f, indent=2)
