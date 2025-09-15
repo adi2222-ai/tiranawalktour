@@ -3,152 +3,66 @@
 {% block content %}
 <!-- Hero Section -->
 <section class="hero">
-    <div class="container">
-        <div class="hero-content">
-            <h1 class="hero-title">{{ _('Your Personal Albania Adventure Awaits') }}</h1>
-            <p class="hero-subtitle">{{ _('Discover hidden gems, authentic experiences, and create unforgettable memories with our personalized tours designed just for you') }}</p>
-            <div class="personalization-prompt">
-                <p class="personalization-text">{{ _('Tell us your interests and we\'ll create your perfect Albanian journey') }}</p>
-                <div class="interest-tags">
-                    <span class="interest-tag">🏛️ {{ _('History & Culture') }}</span>
-                    <span class="interest-tag">🏖️ {{ _('Beaches & Nature') }}</span>
-                    <span class="interest-tag">🍽️ {{ _('Food & Wine') }}</span>
-                    <span class="interest-tag">📸 {{ _('Photography') }}</span>
-                    <span class="interest-tag">🏃‍♂️ {{ _('Adventure') }}</span>
-                </div>
-            </div>
-            <div class="hero-buttons">
-                <a href="#tours" class="cta-button primary">{{ _('Start Planning My Trip') }}</a>
-                <a href="#contact" class="cta-button secondary">{{ _('Get Personal Consultation') }}</a>
-            </div>
-            <div class="trust-indicators">
-                <div class="trust-item">
-                    <span class="trust-number">500+</span>
-                    <span class="trust-label">{{ _('Happy Travelers') }}</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-number">4.9★</span>
-                    <span class="trust-label">{{ _('Average Rating') }}</span>
-                </div>
-                <div class="trust-item">
-                    <span class="trust-number">24/7</span>
-                    <span class="trust-label">{{ _('Local Support') }}</span>
-                </div>
-            </div>
-        </div>
-        <div class="hero-image">
-            <img src="https://cdn.britannica.com/51/183651-050-C7E3A8DA/Tirana-Albania.jpg" alt="Beautiful view of Tirana, Albania">
-            <div class="hero-badge">
-                <span>{{ _('UNESCO World Heritage Sites') }}</span>
-            </div>
-        </div>
+    <div class="hero-content">
+        <h1 class="hero-title">Discover Albania</h1>
+        <p class="hero-subtitle">Experience Albania through authentic walking tours and cultural adventures</p>
+        <a href="#tours" class="cta-button">Explore Tours</a>
+    </div>
+    <div class="hero-image">
+        <img src="https://travellingbalkans.com/wp-content/uploads/2019/09/DJI_0853-HDR-1150x862.jpg" alt="Tirana Skyline">
     </div>
 </section>
 
-<!-- Personalized Recommendations -->
-<section class="personalized-section">
-    <div class="container">
-        <h2>{{ _('Curated Just For You') }}</h2>
-        <p class="section-intro">{{ _('Based on what our international guests love most about Albania') }}</p>
-
-        <div class="persona-cards">
-            <div class="persona-card">
-                <div class="persona-icon">🎨</div>
-                <h3>{{ _('Culture Enthusiast') }}</h3>
-                <p>{{ _('Discover Ottoman architecture, ancient castles, and vibrant local traditions') }}</p>
-                <ul class="persona-features">
-                    <li>{{ _('UNESCO World Heritage Sites') }}</li>
-                    <li>{{ _('Traditional craft workshops') }}</li>
-                    <li>{{ _('Local family visits') }}</li>
-                </ul>
-                <a href="#tours" class="persona-cta">{{ _('Explore Cultural Tours') }}</a>
-            </div>
-
-            <div class="persona-card">
-                <div class="persona-icon">🏖️</div>
-                <h3>{{ _('Nature Lover') }}</h3>
-                <p>{{ _('Pristine beaches, crystal-clear springs, and dramatic mountain landscapes') }}</p>
-                <ul class="persona-features">
-                    <li>{{ _('Albanian Riviera beaches') }}</li>
-                    <li>{{ _('Blue Eye natural spring') }}</li>
-                    <li>{{ _('Mountain hiking trails') }}</li>
-                </ul>
-                <a href="#tours" class="persona-cta">{{ _('See Nature Tours') }}</a>
-            </div>
-
-            <div class="persona-card">
-                <div class="persona-icon">🍷</div>
-                <h3>{{ _('Foodie Explorer') }}</h3>
-                <p>{{ _('Taste authentic Albanian cuisine and learn cooking secrets from locals') }}</p>
-                <ul class="persona-features">
-                    <li>{{ _('Traditional cooking classes') }}</li>
-                    <li>{{ _('Wine tasting experiences') }}</li>
-                    <li>{{ _('Local market tours') }}</li>
-                </ul>
-                <a href="#tours" class="persona-cta">{{ _('Discover Food Tours') }}</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Why Choose Albania Section -->
+<!-- Why Albania Section -->
 <section class="why-albania">
     <div class="container">
-        <h2>{{ _('Why Visit Albania?') }}</h2>
-        <p class="section-intro">{{ _('Albania offers incredible diversity in a compact area - from pristine beaches to ancient castles, all with authentic hospitality') }}</p>
-
+        <h2>Why Visit Albania?</h2>
+        <p class="section-intro">Albania is Europe's best-kept secret, offering incredible history, stunning landscapes, and warm hospitality at unbeatable prices.</p>
+        
         <div class="highlights-grid">
             <div class="highlight-card">
                 <img src="https://cdn.thecrazytourist.com/wp-content/uploads/2023/03/ccimage-shutterstock_2166444493.jpg" alt="Skanderbeg Square">
-                <h3>{{ _('Skanderbeg Square') }}</h3>
-                <p>{{ _('The heart of Tirana, surrounded by important government buildings and cultural institutions.') }}</p>
+                <h3>Skanderbeg Square</h3>
+                <p>The heart of Tirana, surrounded by important government buildings and cultural institutions.</p>
             </div>
             <div class="highlight-card">
                 <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0e/37/8e/ac/la-splendida-cupola-ingresso.jpg?w=1000&h=-1&s=1" alt="Bunk'Art Museum">
-                <h3>{{ _('Bunk\'Art Museums') }}</h3>
-                <p>{{ _('Fascinating underground bunkers turned into multimedia museums showcasing Albania\'s communist past.') }}</p>
+                <h3>Bunk'Art Museums</h3>
+                <p>Fascinating underground bunkers turned into multimedia museums showcasing Albania's communist past.</p>
             </div>
             <div class="highlight-card">
                 <img src="https://pine.al/uploads/images/2023/10/12/6528299c95185-WhatsApp%20Image%202023-10-12%20at%2018.12.36_7d65d1c5.jpg" alt="Et'hem Bey Mosque">
-                <h3>{{ _('Et\'hem Bey Mosque') }}</h3>
-                <p>{{ _('Beautiful 18th-century Ottoman mosque with intricate frescoes and peaceful courtyard.') }}</p>
+                <h3>Et'hem Bey Mosque</h3>
+                <p>Beautiful 18th-century Ottoman mosque with intricate frescoes and peaceful courtyard.</p>
             </div>
             <div class="highlight-card">
                 <img src="https://dajtiekspres.com/wp-content/uploads/2022/12/wall-faqe-e-pare-5.jpg" alt="Dajti Mountain">
-                <h3>{{ _('Dajti Mountain') }}</h3>
-                <p>{{ _('Take the cable car up for breathtaking panoramic views of the city and Adriatic coast.') }}</p>
+                <h3>Dajti Mountain</h3>
+                <p>Take the cable car up for breathtaking panoramic views of the city and Adriatic coast.</p>
             </div>
             <div class="highlight-card">
                 <img src="https://s.inyourpocket.com/gallery/135191.jpg" alt="National History Museum">
-                <h3>{{ _('National History Museum') }}</h3>
-                <p>{{ _('Albania\'s largest museum featuring artifacts from prehistoric times to the present day.') }}</p>
+                <h3>National History Museum</h3>
+                <p>Albania's largest museum featuring artifacts from prehistoric times to the present day.</p>
             </div>
             <div class="highlight-card">
                 <img src="https://wia.al/wp-content/uploads/2024/10/Albanian_food_dishes.jpg" alt="Traditional Albanian Food">
-                <h3>{{ _('Culinary Delights') }}</h3>
-                <p>{{ _('Taste authentic Albanian cuisine influenced by Ottoman, Italian, and Mediterranean traditions.') }}</p>
+                <h3>Culinary Delights</h3>
+                <p>Taste authentic Albanian cuisine influenced by Ottoman, Italian, and Mediterranean traditions.</p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Tours Section -->
-<section class="tours-section" id="tours">
+<!-- Featured Tours Section -->
+<section id="tours" class="tours-section">
     <div class="container">
-        <h2>{{ _('Your Perfect Albanian Experience') }}</h2>
-        <p class="section-intro">{{ _('Handpicked tours based on what international travelers love most about Albania') }}</p>
-
-        <div class="tour-filters">
-            <button class="filter-btn active" data-filter="all">{{ _('All Tours') }}</button>
-            <button class="filter-btn" data-filter="culture">{{ _('Culture & History') }}</button>
-            <button class="filter-btn" data-filter="nature">{{ _('Nature & Adventure') }}</button>
-            <button class="filter-btn" data-filter="food">{{ _('Food & Lifestyle') }}</button>
-            <button class="filter-btn" data-filter="multi-day">{{ _('Multi-Day Journeys') }}</button>
-        </div>
-
+        <h2>Featured Tours</h2>
+        <p class="section-intro">Choose from our carefully curated selection of tours designed to showcase the best of Tirana and Albanian culture.</p>
+        
         <div class="tours-grid">
             {% for tour in tours %}
-            <div class="tour-card" data-filter="{{ tour.category }}">
+            <div class="tour-card">
                 <div class="tour-image">
                     <img src="{{ tour.images[0] }}" alt="{{ tour.title }}">
                     <div class="tour-price">€{{ tour.price }}</div>
@@ -157,7 +71,7 @@
                     <h3>{{ tour.title }}</h3>
                     <p class="tour-duration">{{ tour.duration }}</p>
                     <p class="tour-description">{{ tour.short_description }}</p>
-                    <a href="{{ url_for('tour_detail', tour_id=tour.id) }}" class="tour-button">{{ _('Learn More') }}</a>
+                    <a href="{{ url_for('tour_detail', tour_id=tour.id) }}" class="tour-button">Learn More</a>
                 </div>
             </div>
             {% endfor %}
@@ -166,57 +80,38 @@
 </section>
 
 <!-- Contact Section -->
-<section class="contact-section" id="contact">
+<section id="contact" class="contact-section">
     <div class="container">
-        <h2>{{ _('Let\'s Plan Your Dream Trip to Albania') }}</h2>
-        <p class="section-intro">{{ _('Our local experts speak your language and understand what makes a perfect vacation for international travelers') }}</p>
-
-        <div class="consultation-offer">
-            <div class="offer-card">
-                <h3>{{ _('FREE Personal Consultation') }}</h3>
-                <ul class="offer-features">
-                    <li>{{ _('30-minute video call with local expert') }}</li>
-                    <li>{{ _('Customized itinerary based on your interests') }}</li>
-                    <li>{{ _('Budget-friendly recommendations') }}</li>
-                    <li>{{ _('Real-time local tips and insights') }}</li>
-                </ul>
-                <div class="language-support">
-                    <p>{{ _('Available in:') }}</p>
-                    <div class="language-flags">
-                        <span>🇺🇸 English</span>
-                        <span>🇩🇪 Deutsch</span>
-                        <span>🇮🇹 Italiano</span>
-                        <span>🇸🇦 العربية</span>
-                    </div>
+        <h2>Get in Touch</h2>
+        <p class="section-intro">Ready to explore Tirana? Contact us today to book your authentic Albanian adventure.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info@tiranawalktour.com">info@tiranawalktour.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📱 WhatsApp</h3>
+                    <p><a href="https://wa.me/+35569123456" target="_blank">+355 69 123 4567</a></p>
+                </div>
+                <div class="contact-item">
+                    <h3>📍 Location</h3>
+                    <p>Skanderbeg Square, Tirana, Albania</p>
+                </div>
+                <div class="contact-item">
+                    <h3>🕐 Business Hours</h3>
+                    <p>Daily: 9:00 AM - 6:00 PM</p>
                 </div>
             </div>
-        </div>
-
-        <div class="contact-info">
-            <div class="contact-item">
-                <h3>{{ _('📧 Email') }}</h3>
-                <p><a href="mailto:info@tiranawalktour.com">info@tiranawalktour.com</a></p>
-            </div>
-            <div class="contact-item">
-                <h3>{{ _('📱 WhatsApp') }}</h3>
-                <p><a href="https://wa.me/+35569123456" target="_blank">+355 69 123 4567</a></p>
-            </div>
-            <div class="contact-item">
-                <h3>{{ _('📍 Location') }}</h3>
-                <p>{{ _('Skanderbeg Square, Tirana, Albania') }}</p>
-            </div>
-            <div class="contact-item">
-                <h3>{{ _('🕐 Business Hours') }}</h3>
-                <p>{{ _('Daily: 9:00 AM - 6:00 PM') }}</p>
-            </div>
-        </div>
-
-        <div class="contact-cta">
-            <h3>{{ _('Book Your Tour Today') }}</h3>
-            <p>{{ _('Experience the best of Tirana with our expert local guides. All tours include professional guidance, small group sizes, and authentic cultural insights.') }}</p>
-            <div class="contact-buttons">
-                <a href="https://wa.me/+35569123456" class="cta-button whatsapp-btn" target="_blank">{{ _('WhatsApp Us') }}</a>
-                <a href="mailto:info@tiranawalktour.com" class="cta-button email-btn">{{ _('Send Email') }}</a>
+            
+            <div class="contact-cta">
+                <h3>Book Your Tour Today</h3>
+                <p>Experience the best of Tirana with our expert local guides. All tours include professional guidance, small group sizes, and authentic cultural insights.</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/+35569123456" class="cta-button whatsapp-btn" target="_blank">WhatsApp Us</a>
+                    <a href="mailto:info@tiranawalktour.com" class="cta-button email-btn">Send Email</a>
+                </div>
             </div>
         </div>
     </div>

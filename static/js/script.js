@@ -1,80 +1,48 @@
 // Mobile Navigation Toggle
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
-
-hamburger.addEventListener('click', () => {
-    hamburger.classList.toggle('active');
-    navMenu.classList.toggle('active');
-});
-
-// Language Selector
 document.addEventListener('DOMContentLoaded', function() {
-    const langButton = document.getElementById('lang-button');
-    const langDropdown = document.getElementById('lang-dropdown');
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
 
-    if (langButton && langDropdown) {
-        langButton.addEventListener('click', function(e) {
-            e.preventDefault();
-            langDropdown.style.opacity = langDropdown.style.opacity === '1' ? '0' : '1';
-            langDropdown.style.visibility = langDropdown.style.visibility === 'visible' ? 'hidden' : 'visible';
+    if (hamburger && navMenu) {
+        hamburger.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            hamburger.classList.toggle('active');
         });
 
-        // Close dropdown when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!langButton.contains(e.target) && !langDropdown.contains(e.target)) {
-                langDropdown.style.opacity = '0';
-                langDropdown.style.visibility = 'hidden';
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
+                navMenu.classList.remove('active');
+                hamburger.classList.remove('active');
             }
         });
     }
-
-    // Interest tags interaction
-    const interestTags = document.querySelectorAll('.interest-tag');
-    interestTags.forEach(tag => {
-        tag.addEventListener('click', function() {
-            this.style.background = '#0071e3';
-            this.style.color = 'white';
-            this.style.transform = 'scale(1.05)';
-
-            setTimeout(() => {
-                this.style.transform = 'scale(1)';
-            }, 150);
-        });
-    });
-
-    // Close menu when clicking on a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-        });
-    });
-
-    // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
-        if (!hamburger.contains(event.target) && !navMenu.contains(event.target)) {
-            navMenu.classList.remove('active');
-            hamburger.classList.remove('active');
-        }
-    });
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
-
+            
             // If we're not on the homepage, go to homepage first
             if (window.location.pathname !== '/' && href.startsWith('#')) {
                 window.location.href = '/' + href;
                 return;
             }
-
+            
             e.preventDefault();
             const target = document.querySelector(href);
             if (target) {
                 const navbarHeight = document.querySelector('.navbar').offsetHeight;
                 const targetPosition = target.offsetTop - navbarHeight - 20;
-
+                
                 window.scrollTo({
                     top: targetPosition,
                     behavior: 'smooth'
@@ -98,11 +66,11 @@ document.addEventListener('DOMContentLoaded', function() {
     if (bookingForm) {
         bookingForm.addEventListener('submit', function(e) {
             e.preventDefault();
-
+            
             // Basic client-side validation
             const requiredFields = ['user_name', 'user_email', 'user_phone', 'preferred_date_time', 'number_of_people'];
             let isValid = true;
-
+            
             requiredFields.forEach(fieldName => {
                 const field = this.querySelector(`[name="${fieldName}"]`);
                 if (!field || !field.value.trim()) {
@@ -112,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     field.style.borderColor = '#d2d2d7';
                 }
             });
-
+            
             // Email validation
             const email = this.querySelector('[name="user_email"]');
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -120,20 +88,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 isValid = false;
                 email.style.borderColor = '#ff3b30';
             }
-
+            
             if (!isValid) {
                 alert('Please fill in all required fields correctly.');
                 return;
             }
-
+            
             // Show loading state
             const submitButton = this.querySelector('.book-button');
             const originalText = submitButton.textContent;
             submitButton.textContent = 'Booking...';
             submitButton.disabled = true;
-
+            
             const formData = new FormData(this);
-
+            
             fetch('/book', {
                 method: 'POST',
                 body: formData
@@ -164,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (this.href && this.href.includes('#')) {
                 return; // Allow smooth scroll
             }
-
+            
             this.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 this.style.transform = '';

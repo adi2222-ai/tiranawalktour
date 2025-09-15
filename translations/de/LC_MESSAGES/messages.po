@@ -1,121 +1,20 @@
-
-# German translations for Albania Walk Tour.
+# German translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: 1.0\n"
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-09-15 10:02+0000\n"
+"PO-Revision-Date: 2025-09-15 10:02+0000\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: de\n"
+"Language-Team: de <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
 
-msgid "Your Personal Albania Adventure Awaits"
-msgstr "Ihr persönliches Albanien-Abenteuer wartet"
-
-msgid "Discover hidden gems, authentic experiences, and create unforgettable memories with our personalized tours designed just for you"
-msgstr "Entdecken Sie versteckte Schätze, authentische Erlebnisse und schaffen Sie unvergessliche Erinnerungen mit unseren personalisierten Touren"
-
-msgid "Tell us your interests and we'll create your perfect Albanian journey"
-msgstr "Teilen Sie uns Ihre Interessen mit und wir erstellen Ihre perfekte albanische Reise"
-
-msgid "History & Culture"
-msgstr "Geschichte & Kultur"
-
-msgid "Beaches & Nature"
-msgstr "Strände & Natur"
-
-msgid "Food & Wine"
-msgstr "Essen & Wein"
-
-msgid "Photography"
-msgstr "Fotografie"
-
-msgid "Adventure"
-msgstr "Abenteuer"
-
-msgid "Start Planning My Trip"
-msgstr "Meine Reise planen"
-
-msgid "Get Personal Consultation"
-msgstr "Persönliche Beratung"
-
-msgid "Happy Travelers"
-msgstr "Zufriedene Reisende"
-
-msgid "Average Rating"
-msgstr "Durchschnittliche Bewertung"
-
-msgid "Local Support"
-msgstr "Lokaler Support"
-
-msgid "UNESCO World Heritage Sites"
-msgstr "UNESCO-Welterbestätten"
-
-msgid "Home"
-msgstr "Startseite"
-
-msgid "About"
-msgstr "Über uns"
-
-msgid "Tours"
-msgstr "Touren"
-
-msgid "Contact"
-msgstr "Kontakt"
-
-msgid "Curated Just For You"
-msgstr "Speziell für Sie kuratiert"
-
-msgid "Based on what our international guests love most about Albania"
-msgstr "Basierend auf dem, was unsere internationalen Gäste am meisten an Albanien lieben"
-
-msgid "Culture Enthusiast"
-msgstr "Kultur-Enthusiast"
-
-msgid "Discover Ottoman architecture, ancient castles, and vibrant local traditions"
-msgstr "Entdecken Sie osmanische Architektur, alte Burgen und lebendige lokale Traditionen"
-
-msgid "Explore Cultural Tours"
-msgstr "Kulturtouren erkunden"
-
-msgid "Nature Lover"
-msgstr "Naturliebhaber"
-
-msgid "Pristine beaches, crystal-clear springs, and dramatic mountain landscapes"
-msgstr "Unberührte Strände, kristallklare Quellen und dramatische Berglandschaften"
-
-msgid "See Nature Tours"
-msgstr "Naturtouren ansehen"
-
-msgid "Foodie Explorer"
-msgstr "Kulinarischer Entdecker"
-
-msgid "Taste authentic Albanian cuisine and learn cooking secrets from locals"
-msgstr "Probieren Sie authentische albanische Küche und lernen Sie Kochgeheimnisse von Einheimischen"
-
-msgid "Discover Food Tours"
-msgstr "Food-Touren entdecken"
-
-msgid "Your Perfect Albanian Experience"
-msgstr "Ihr perfektes albanisches Erlebnis"
-
-msgid "All Tours"
-msgstr "Alle Touren"
-
-msgid "Culture & History"
-msgstr "Kultur & Geschichte"
-
-msgid "Nature & Adventure"
-msgstr "Natur & Abenteuer"
-
-msgid "Food & Lifestyle"
-msgstr "Essen & Lifestyle"
-
-msgid "Multi-Day Journeys"
-msgstr "Mehrtägige Reisen"
-
-msgid "Let's Plan Your Dream Trip to Albania"
-msgstr "Lassen Sie uns Ihre Traumreise nach Albanien planen"
-
-msgid "FREE Personal Consultation"
-msgstr "KOSTENLOSE persönliche Beratung"
-
-msgid "Available in:"
-msgstr "Verfügbar in:"

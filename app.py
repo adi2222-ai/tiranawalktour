@@ -24,11 +24,6 @@ app.config['BABEL_DEFAULT_TIMEZONE'] = 'UTC'
 def _(string):
     return gettext(string)
 
-# Make get_locale available in templates
-@app.template_global()
-def get_locale():
-    return get_locale()
-
 def get_locale():
     # 1. Check URL parameter
     if request.args.get('lang'):

@@ -14,28 +14,10 @@
         <div class="nav-container">
             <a href="{{ url_for('index') }}" class="nav-logo">Albania Walk Tour</a>
             <div class="nav-menu" id="nav-menu">
-                <a href="{{ url_for('index') }}" class="nav-link">{{ _('Home') }}</a>
-                <a href="{{ url_for('about') }}" class="nav-link">{{ _('About') }}</a>
-                <a href="#tours" class="nav-link">{{ _('Tours') }}</a>
-                <a href="#contact" class="nav-link">{{ _('Contact') }}</a>
-                <div class="language-selector">
-                    <button class="lang-button" id="lang-button">
-                        <span class="current-lang">
-                            {% if get_locale() == 'en' %}🇺🇸 EN
-                            {% elif get_locale() == 'de' %}🇩🇪 DE
-                            {% elif get_locale() == 'it' %}🇮🇹 IT
-                            {% elif get_locale() == 'ar' %}🇸🇦 AR
-                            {% endif %}
-                        </span>
-                        <span class="lang-arrow">▼</span>
-                    </button>
-                    <div class="lang-dropdown" id="lang-dropdown">
-                        <a href="{{ url_for('set_language', language='en') }}" class="lang-option">🇺🇸 English</a>
-                        <a href="{{ url_for('set_language', language='de') }}" class="lang-option">🇩🇪 Deutsch</a>
-                        <a href="{{ url_for('set_language', language='it') }}" class="lang-option">🇮🇹 Italiano</a>
-                        <a href="{{ url_for('set_language', language='ar') }}" class="lang-option">🇸🇦 العربية</a>
-                    </div>
-                </div>
+                <a href="{{ url_for('index') }}" class="nav-link">Home</a>
+                <a href="{{ url_for('about') }}" class="nav-link">About</a>
+                <a href="#tours" class="nav-link">Tours</a>
+                <a href="#contact" class="nav-link">Contact</a>
             </div>
             <div class="hamburger" id="hamburger">
                 <span class="bar"></span>
