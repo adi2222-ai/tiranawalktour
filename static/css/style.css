@@ -12,6 +12,43 @@ body {
     background-color: #ffffff;
 }
 
+/* RTL support for Arabic */
+body[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+}
+
+body[dir="rtl"] .nav-container {
+    flex-direction: row-reverse;
+}
+
+body[dir="rtl"] .nav-menu {
+    gap: 2rem;
+}
+
+body[dir="rtl"] .hero {
+    grid-template-columns: 1fr 1fr;
+}
+
+body[dir="rtl"] .contact-grid {
+    direction: rtl;
+}
+
+body[dir="rtl"] .floating-language {
+    left: 30px;
+    right: auto;
+}
+
+body[dir="rtl"] .floating-contacts {
+    left: 30px;
+    right: auto;
+}
+
+body[dir="rtl"] .language-dropdown {
+    left: 0;
+    right: auto;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
