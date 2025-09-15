@@ -52,7 +52,19 @@ ADMIN_PASSWORD = "TiTirana"
 def load_tours():
     try:
         with open('tours.json', 'r') as f:
-            return json.load(f)
+            tours = json.load(f)
+            # Translate tour data
+            for tour in tours:
+                tour['title'] = gettext(tour['title'])
+                tour['short_description'] = gettext(tour['short_description'])
+                tour['long_description'] = gettext(tour['long_description'])
+                if 'highlights' in tour:
+                    tour['highlights'] = [gettext(highlight) for highlight in tour['highlights']]
+                if 'included' in tour:
+                    tour['included'] = [gettext(item) for item in tour['included']]
+                if 'schedule' in tour:
+                    tour['schedule'] = [gettext(item) for item in tour['schedule']]
+            return tours
     except FileNotFoundError:
         return []
 

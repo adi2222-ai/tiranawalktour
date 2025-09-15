@@ -69,9 +69,9 @@
                     <div class="tour-price">€{{ tour.price }}</div>
                 </div>
                 <div class="tour-content">
-                    <h3>{{ _(tour.title) }}</h3>
+                    <h3>{{ tour.title }}</h3>
                     <p class="tour-duration">{{ tour.duration }}</p>
-                    <p class="tour-description">{{ _(tour.short_description) }}</p>
+                    <p class="tour-description">{{ tour.short_description }}</p>
                     <div class="tour-languages">
                         <small>{{ _('Available in') }}: {{ tour.languages|join(', ') }}</small>
                     </div>
