@@ -474,6 +474,81 @@ section h2 {
     background: #0071e3 !important;
 }
 
+/* Language Selector */
+.language-selector {
+    position: relative;
+}
+
+.language-selector select {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 113, 227, 0.3);
+    border-radius: 20px;
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    color: #1d1d1f;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.language-selector select:hover {
+    border-color: #0071e3;
+    box-shadow: 0 2px 10px rgba(0, 113, 227, 0.2);
+}
+
+/* Tour Languages */
+.tour-languages {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.tour-languages small {
+    color: #0071e3;
+    font-weight: 500;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-content p {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #1d1d1f;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial-author {
+    color: #0071e3;
+    font-weight: 600;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .nav-menu {
@@ -552,5 +627,18 @@ section h2 {
     .contact-icon svg {
         width: 24px;
         height: 24px;
+    }
+
+    .language-selector {
+        margin-top: 1rem;
+    }
+
+    .language-selector select {
+        width: 100%;
+        padding: 10px 15px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
     }
 }

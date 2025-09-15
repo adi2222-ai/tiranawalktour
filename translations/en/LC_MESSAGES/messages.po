@@ -1,20 +1,149 @@
-# English translations for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
+
+# English translations for Albania Walk Tour.
+# Copyright (C) 2025 Albania Walk Tour
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Project-Id-Version: Albania Walk Tour 1.0\n"
+"Report-Msgid-Bugs-To: info@albaniawalktour.com\n"
 "POT-Creation-Date: 2025-09-15 10:02+0000\n"
 "PO-Revision-Date: 2025-09-15 10:02+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Albania Walk Tour Team\n"
 "Language: en\n"
-"Language-Team: en <LL@li.org>\n"
+"Language-Team: English\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
+msgid "Home"
+msgstr "Home"
+
+msgid "About"
+msgstr "About"
+
+msgid "Tours"
+msgstr "Tours"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Discover Albania"
+msgstr "Discover Albania"
+
+msgid "Your personalized trip advisor for authentic Albanian adventures - from pristine beaches to ancient castles"
+msgstr "Your personalized trip advisor for authentic Albanian adventures - from pristine beaches to ancient castles"
+
+msgid "Explore Tours"
+msgstr "Explore Tours"
+
+msgid "Why Choose Our Albanian Adventures?"
+msgstr "Why Choose Our Albanian Adventures?"
+
+msgid "We are your personal trip advisors, creating unforgettable experiences in Europe's last hidden gem. Discover authentic Albania with local expertise and personalized service."
+msgstr "We are your personal trip advisors, creating unforgettable experiences in Europe's last hidden gem. Discover authentic Albania with local expertise and personalized service."
+
+msgid "Expert Local Guides"
+msgstr "Expert Local Guides"
+
+msgid "Native Albanian guides with deep cultural knowledge and fluency in multiple languages"
+msgstr "Native Albanian guides with deep cultural knowledge and fluency in multiple languages"
+
+msgid "Personalized Experiences"
+msgstr "Personalized Experiences"
+
+msgid "Customized itineraries tailored to your interests, from history and culture to beaches and mountains"
+msgstr "Customized itineraries tailored to your interests, from history and culture to beaches and mountains"
+
+msgid "Authentic Cultural Immersion"
+msgstr "Authentic Cultural Immersion"
+
+msgid "Experience real Albanian life - traditional cuisine, local families, and hidden gems off the tourist trail"
+msgstr "Experience real Albanian life - traditional cuisine, local families, and hidden gems off the tourist trail"
+
+msgid "Small Group Experience"
+msgstr "Small Group Experience"
+
+msgid "Maximum 16 people per tour for intimate experiences and personalized attention"
+msgstr "Maximum 16 people per tour for intimate experiences and personalized attention"
+
+msgid "UNESCO World Heritage"
+msgstr "UNESCO World Heritage"
+
+msgid "Visit ancient Butrint, medieval Berat and Gjirokastër with expert historical commentary"
+msgstr "Visit ancient Butrint, medieval Berat and Gjirokastër with expert historical commentary"
+
+msgid "Culinary Adventures"
+msgstr "Culinary Adventures"
+
+msgid "Taste authentic Albanian cuisine and learn family recipes from local cooks"
+msgstr "Taste authentic Albanian cuisine and learn family recipes from local cooks"
+
+msgid "Our Signature Tours"
+msgstr "Our Signature Tours"
+
+msgid "From quick city walks to week-long adventures - discover Albania your way with our carefully crafted experiences"
+msgstr "From quick city walks to week-long adventures - discover Albania your way with our carefully crafted experiences"
+
+msgid "Available in"
+msgstr "Available in"
+
+msgid "Learn More"
+msgstr "Learn More"
+
+msgid "What Our Travelers Say"
+msgstr "What Our Travelers Say"
+
+msgid "An incredible week exploring Albania! Our guide was knowledgeable and passionate. The mix of history, culture, and stunning landscapes exceeded all expectations."
+msgstr "An incredible week exploring Albania! Our guide was knowledgeable and passionate. The mix of history, culture, and stunning landscapes exceeded all expectations."
+
+msgid "Germany"
+msgstr "Germany"
+
+msgid "Albania surprised us at every turn. From the warm hospitality to the untouched beaches, this tour showed us Europe's best-kept secret."
+msgstr "Albania surprised us at every turn. From the warm hospitality to the untouched beaches, this tour showed us Europe's best-kept secret."
+
+msgid "United Kingdom"
+msgstr "United Kingdom"
+
+msgid "Perfect organization, authentic experiences, and incredible value for money. We felt like we were traveling with friends rather than a tour group."
+msgstr "Perfect organization, authentic experiences, and incredible value for money. We felt like we were traveling with friends rather than a tour group."
+
+msgid "Italy"
+msgstr "Italy"
+
+msgid "Plan Your Albanian Adventure"
+msgstr "Plan Your Albanian Adventure"
+
+msgid "Ready to discover Albania? Our local experts are here to create your perfect personalized itinerary."
+msgstr "Ready to discover Albania? Our local experts are here to create your perfect personalized itinerary."
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Location"
+msgstr "Location"
+
+msgid "Skanderbeg Square, Tirana, Albania"
+msgstr "Skanderbeg Square, Tirana, Albania"
+
+msgid "Business Hours"
+msgstr "Business Hours"
+
+msgid "Daily: 9:00 AM - 6:00 PM"
+msgstr "Daily: 9:00 AM - 6:00 PM"
+
+msgid "Start Planning Today"
+msgstr "Start Planning Today"
+
+msgid "Get personalized recommendations, custom itineraries, and insider tips from our Albanian travel experts. All tours include professional multilingual guides and authentic local experiences."
+msgstr "Get personalized recommendations, custom itineraries, and insider tips from our Albanian travel experts. All tours include professional multilingual guides and authentic local experiences."
+
+msgid "WhatsApp Us"
+msgstr "WhatsApp Us"
+
+msgid "Send Email"
+msgstr "Send Email"

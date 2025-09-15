@@ -1,17 +1,18 @@
-# Arabic translations for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
+
+# Arabic translations for Albania Walk Tour.
+# Copyright (C) 2025 Albania Walk Tour
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Project-Id-Version: Albania Walk Tour 1.0\n"
+"Report-Msgid-Bugs-To: info@albaniawalktour.com\n"
 "POT-Creation-Date: 2025-09-15 10:02+0000\n"
 "PO-Revision-Date: 2025-09-15 10:02+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Albania Walk Tour Team\n"
 "Language: ar\n"
-"Language-Team: ar <LL@li.org>\n"
+"Language-Team: Arabic\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
 "n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
 "MIME-Version: 1.0\n"
@@ -19,3 +20,131 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "About"
+msgstr "نبذة عنا"
+
+msgid "Tours"
+msgstr "الجولات"
+
+msgid "Contact"
+msgstr "اتصل بنا"
+
+msgid "Discover Albania"
+msgstr "اكتشف ألبانيا"
+
+msgid "Your personalized trip advisor for authentic Albanian adventures - from pristine beaches to ancient castles"
+msgstr "مستشارك الشخصي للرحلات لمغامرات ألبانية أصيلة - من الشواطئ البكر إلى القلاع القديمة"
+
+msgid "Explore Tours"
+msgstr "استكشف الجولات"
+
+msgid "Why Choose Our Albanian Adventures?"
+msgstr "لماذا تختار مغامراتنا الألبانية؟"
+
+msgid "We are your personal trip advisors, creating unforgettable experiences in Europe's last hidden gem. Discover authentic Albania with local expertise and personalized service."
+msgstr "نحن مستشاروك الشخصيون للرحلات، نخلق تجارب لا تُنسى في جوهرة أوروبا المخفية الأخيرة. اكتشف ألبانيا الأصيلة بالخبرة المحلية والخدمة الشخصية."
+
+msgid "Expert Local Guides"
+msgstr "مرشدون محليون خبراء"
+
+msgid "Native Albanian guides with deep cultural knowledge and fluency in multiple languages"
+msgstr "مرشدون ألبانيون أصليون بمعرفة ثقافية عميقة وطلاقة بعدة لغات"
+
+msgid "Personalized Experiences"
+msgstr "تجارب شخصية"
+
+msgid "Customized itineraries tailored to your interests, from history and culture to beaches and mountains"
+msgstr "برامج مخصصة تناسب اهتماماتك، من التاريخ والثقافة إلى الشواطئ والجبال"
+
+msgid "Authentic Cultural Immersion"
+msgstr "انغماس ثقافي أصيل"
+
+msgid "Experience real Albanian life - traditional cuisine, local families, and hidden gems off the tourist trail"
+msgstr "اختبر الحياة الألبانية الحقيقية - المأكولات التقليدية والعائلات المحلية والكنوز المخفية بعيداً عن المسارات السياحية"
+
+msgid "Small Group Experience"
+msgstr "تجربة مجموعات صغيرة"
+
+msgid "Maximum 16 people per tour for intimate experiences and personalized attention"
+msgstr "حد أقصى 16 شخص في الجولة للحصول على تجارب حميمة واهتمام شخصي"
+
+msgid "UNESCO World Heritage"
+msgstr "التراث العالمي لليونسكو"
+
+msgid "Visit ancient Butrint, medieval Berat and Gjirokastër with expert historical commentary"
+msgstr "زيارة بوترينت القديمة وبيرات وجيروكاسترا في العصور الوسطى مع تعليق تاريخي من الخبراء"
+
+msgid "Culinary Adventures"
+msgstr "مغامرات طهي"
+
+msgid "Taste authentic Albanian cuisine and learn family recipes from local cooks"
+msgstr "تذوق المأكولات الألبانية الأصيلة وتعلم وصفات عائلية من الطباخين المحليين"
+
+msgid "Our Signature Tours"
+msgstr "جولاتنا المميزة"
+
+msgid "From quick city walks to week-long adventures - discover Albania your way with our carefully crafted experiences"
+msgstr "من الجولات السريعة في المدينة إلى المغامرات التي تستغرق أسبوعاً - اكتشف ألبانيا بطريقتك مع تجاربنا المصممة بعناية"
+
+msgid "Available in"
+msgstr "متوفر باللغة"
+
+msgid "Learn More"
+msgstr "اعرف أكثر"
+
+msgid "What Our Travelers Say"
+msgstr "ماذا يقول مسافرونا"
+
+msgid "An incredible week exploring Albania! Our guide was knowledgeable and passionate. The mix of history, culture, and stunning landscapes exceeded all expectations."
+msgstr "أسبوع لا يصدق في استكشاف ألبانيا! كان مرشدنا مطلعاً ومتحمساً. مزيج التاريخ والثقافة والمناظر الطبيعية الخلابة فاق كل التوقعات."
+
+msgid "Germany"
+msgstr "ألمانيا"
+
+msgid "Albania surprised us at every turn. From the warm hospitality to the untouched beaches, this tour showed us Europe's best-kept secret."
+msgstr "فاجأتنا ألبانيا في كل منعطف. من الضيافة الدافئة إلى الشواطئ البكر، أظهرت لنا هذه الجولة أفضل سر محفوظ في أوروبا."
+
+msgid "United Kingdom"
+msgstr "المملكة المتحدة"
+
+msgid "Perfect organization, authentic experiences, and incredible value for money. We felt like we were traveling with friends rather than a tour group."
+msgstr "تنظيم مثالي وتجارب أصيلة وقيمة لا تصدق مقابل المال. شعرنا وكأننا نسافر مع الأصدقاء وليس مع مجموعة سياحية."
+
+msgid "Italy"
+msgstr "إيطاليا"
+
+msgid "Plan Your Albanian Adventure"
+msgstr "خطط لمغامرتك الألبانية"
+
+msgid "Ready to discover Albania? Our local experts are here to create your perfect personalized itinerary."
+msgstr "مستعد لاكتشاف ألبانيا؟ خبراؤنا المحليون هنا لإنشاء برنامجك الشخصي المثالي."
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Location"
+msgstr "الموقع"
+
+msgid "Skanderbeg Square, Tirana, Albania"
+msgstr "ساحة سكاندربغ، تيرانا، ألبانيا"
+
+msgid "Business Hours"
+msgstr "ساعات العمل"
+
+msgid "Daily: 9:00 AM - 6:00 PM"
+msgstr "يومياً: 9:00 صباحاً - 6:00 مساءً"
+
+msgid "Start Planning Today"
+msgstr "ابدأ التخطيط اليوم"
+
+msgid "Get personalized recommendations, custom itineraries, and insider tips from our Albanian travel experts. All tours include professional multilingual guides and authentic local experiences."
+msgstr "احصل على توصيات شخصية وبرامج مخصصة ونصائح من الداخل من خبراء السفر الألبانيين لدينا. تشمل جميع الجولات مرشدين محترفين متعددي اللغات وتجارب محلية أصيلة."
+
+msgid "WhatsApp Us"
+msgstr "راسلنا على واتساب"
+
+msgid "Send Email"
+msgstr "إرسال بريد إلكتروني"

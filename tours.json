@@ -1,3 +1,4 @@
+
 [
   {
     "id": "albania-week-tour",
@@ -54,37 +55,260 @@
     ]
   },
   {
+    "id": "classic-albania-6-days",
+    "title": "Classic Albania - 6 Days Cultural Journey",
+    "short_description": "The perfect introduction to Albania - from Tirana's vibrant culture to UNESCO heritage sites and the stunning Albanian Riviera.",
+    "long_description": "Discover the essence of Albania on this carefully crafted 6-day journey. Starting in dynamic Tirana, you'll explore medieval Berat's Ottoman architecture, wander through Gjirokastër's stone streets, and relax on the pristine beaches of Saranda. This tour combines Albania's rich cultural heritage with its natural beauty, including visits to UNESCO World Heritage sites and the famous Blue Eye spring.",
+    "price": 475,
+    "duration": "6 days / 5 nights",
+    "starting_point": "Tirana International Airport",
+    "schedule": [
+      "2025-04-05T09:00:00",
+      "2025-04-19T09:00:00",
+      "2025-05-03T09:00:00",
+      "2025-05-17T09:00:00",
+      "2025-06-14T09:00:00",
+      "2025-06-28T09:00:00",
+      "2025-09-06T09:00:00",
+      "2025-09-20T09:00:00",
+      "2025-10-04T09:00:00",
+      "2025-10-18T09:00:00"
+    ],
+    "images": [
+      "https://cdn.thecrazytourist.com/wp-content/uploads/2023/03/ccimage-shutterstock_2166444493.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/07/Berat-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/07/Gjirokaster-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/04/Blue-Eye-Spring-Albania.jpg"
+    ],
+    "highlights": [
+      "Tirana city highlights: Skanderbeg Square, Et'hem Bey Mosque, Blloku neighborhood",
+      "Krujë Castle and Skanderbeg Museum or Dajti Mountain cable car",
+      "Berat UNESCO Castle and Onufri Museum",
+      "Traditional Ottoman houses and Mangalem quarter",
+      "Gjirokastër Castle and Skenduli House",
+      "Old bazaar shopping and traditional crafts",
+      "Blue Eye natural spring visit",
+      "Butrint National Park archaeological site",
+      "Ksamil beaches and island boat trips",
+      "Traditional Albanian welcome dinner"
+    ],
+    "included": [
+      "5 nights accommodation in selected hotels",
+      "Daily breakfast and 3 traditional dinners",
+      "Professional multilingual guide throughout",
+      "All transportation in comfortable vehicles",
+      "All entrance fees and museum tickets",
+      "Airport transfers",
+      "Blue Eye and Butrint entry fees",
+      "Small group experience (max 16 people)"
+    ],
+    "meeting_point_details": "Airport pickup from Tirana International Airport or meet at centrally located Tirana hotel lobby. Detailed instructions provided upon booking.",
+    "languages": [
+      "English",
+      "German",
+      "Italian",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "albanian-riviera-5-days",
+    "title": "Albanian Riviera Highlights - 5 Days Beach & Culture",
+    "short_description": "Explore Albania's stunning coastline from Vlorë to Saranda, including pristine beaches, dramatic mountain passes, and ancient archaeological sites.",
+    "long_description": "Discover the untouched beauty of the Albanian Riviera on this 5-day coastal adventure. Drive through the spectacular Llogara Pass, relax on hidden beaches, explore Porto Palermo's historic castle, and visit the ancient ruins of Butrint. This tour perfectly balances beach relaxation with cultural exploration, showcasing Albania's Mediterranean charm and rich history.",
+    "price": 395,
+    "duration": "5 days / 4 nights",
+    "starting_point": "Vlorë or Tirana transfer",
+    "schedule": [
+      "2025-05-15T10:00:00",
+      "2025-05-29T10:00:00",
+      "2025-06-12T10:00:00",
+      "2025-06-26T10:00:00",
+      "2025-07-10T10:00:00",
+      "2025-07-24T10:00:00",
+      "2025-08-07T10:00:00",
+      "2025-08-21T10:00:00",
+      "2025-09-04T10:00:00",
+      "2025-09-18T10:00:00"
+    ],
+    "images": [
+      "https://www.albaniantourism.com/wp-content/uploads/2018/09/Saranda-Albania-Riviera.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/04/Llogara-Pass-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2018/09/Ksamil-Beach-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/04/Blue-Eye-Spring-Albania.jpg"
+    ],
+    "highlights": [
+      "Vlorë Lungomare seaside promenade",
+      "Zvernec Monastery sunset visit",
+      "Llogara National Park scenic mountain drive",
+      "Himarë coastal village exploration",
+      "Porto Palermo and Ali Pasha Castle",
+      "Gjipe Beach boat trip (seasonal)",
+      "Blue Eye natural spring swimming",
+      "Butrint National Park archaeological tour",
+      "Ksamil islands boat excursions",
+      "Seaside dinners with fresh seafood"
+    ],
+    "included": [
+      "4 nights accommodation in seaside hotels",
+      "Daily breakfast and 2 seafood dinners",
+      "Professional guide and driver",
+      "All transportation including mountain passes",
+      "Boat trips to beaches and islands",
+      "Butrint National Park entry and guide",
+      "Blue Eye spring entrance",
+      "Beach equipment and umbrellas"
+    ],
+    "meeting_point_details": "Meet in Vlorë city center or transfer available from Tirana (additional cost). Beach hotels pickup included.",
+    "languages": [
+      "English",
+      "Italian",
+      "German",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "southern-cultural-loop",
+    "title": "Southern Cultural Loop - 6 Days Archaeological Journey",
+    "short_description": "Immerse yourself in Albania's ancient history visiting Apollonia, Berat, Gjirokastër, and Butrint - four UNESCO and archaeological treasures.",
+    "long_description": "Perfect for history enthusiasts, this 6-day cultural journey takes you through Albania's most significant archaeological and UNESCO World Heritage sites. From the ancient Greek ruins of Apollonia to the Ottoman architecture of Berat and Gjirokastër, ending with the spectacular Butrint archaeological park. Experience Albania's layered history from Illyrian times to the Ottoman period.",
+    "price": 425,
+    "duration": "6 days / 5 nights",
+    "starting_point": "Tirana",
+    "schedule": [
+      "2025-04-26T08:30:00",
+      "2025-05-10T08:30:00",
+      "2025-05-24T08:30:00",
+      "2025-06-07T08:30:00",
+      "2025-09-13T08:30:00",
+      "2025-09-27T08:30:00",
+      "2025-10-11T08:30:00"
+    ],
+    "images": [
+      "https://www.albaniantourism.com/wp-content/uploads/2019/07/Apollonia-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/07/Berat-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/07/Gjirokaster-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2020/04/Butrint-National-Park-Albania.jpg"
+    ],
+    "highlights": [
+      "Tirana orientation and National History Museum",
+      "Apollonia archaeological site with ancient Greek theater",
+      "Berat Castle and Onufri Museum masterpieces",
+      "Traditional Ottoman houses architecture tour",
+      "Gjirokastër Castle and armory museum",
+      "Traditional house visits and handicraft workshops",
+      "Local family visits and cultural exchanges",
+      "Butrint National Park full guided tour",
+      "UNESCO World Heritage site certifications",
+      "Expert archaeological commentary"
+    ],
+    "included": [
+      "5 nights in traditional heritage hotels",
+      "All meals including traditional Albanian cuisine",
+      "Expert archaeological guide throughout",
+      "All site entrance fees and museum tickets",
+      "Transportation in comfortable vehicles",
+      "Cultural workshops and local family visits",
+      "Traditional handicraft demonstrations",
+      "Small group experience (max 12 people)"
+    ],
+    "meeting_point_details": "Tirana city center hotel pickup or meet at National History Museum main entrance.",
+    "languages": [
+      "English",
+      "French",
+      "Italian",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "northern-mountains-theth",
+    "title": "Northern Mountains & Theth - 6 Days Alpine Adventure",
+    "short_description": "Explore Albania's dramatic northern Alps, traditional mountain villages, and pristine wilderness in Theth and Valbona valleys.",
+    "long_description": "Venture into Albania's spectacular northern mountains on this 6-day adventure through pristine alpine landscapes. Discover the traditional stone villages of Theth and Valbona, hike to stunning waterfalls, learn about the ancient Kanun code of honor, and experience authentic mountain hospitality. This tour is perfect for nature lovers seeking authentic cultural immersion away from the crowds.",
+    "price": 485,
+    "duration": "6 days / 5 nights",
+    "starting_point": "Tirana to Shkodër",
+    "schedule": [
+      "2025-06-01T07:00:00",
+      "2025-06-15T07:00:00",
+      "2025-06-29T07:00:00",
+      "2025-07-13T07:00:00",
+      "2025-07-27T07:00:00",
+      "2025-08-10T07:00:00",
+      "2025-08-24T07:00:00",
+      "2025-09-07T07:00:00"
+    ],
+    "images": [
+      "https://www.albaniantourism.com/wp-content/uploads/2020/04/Theth-National-Park-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2020/04/Valbona-Valley-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2019/07/Shkoder-Albania.jpg",
+      "https://www.albaniantourism.com/wp-content/uploads/2020/04/Albanian-Alps.jpg"
+    ],
+    "highlights": [
+      "Shkodër city tour and Rozafa Castle",
+      "Traditional mountain road journey to Theth",
+      "Blue Eye waterfall hiking expedition",
+      "Theth Church and Lock-in Tower cultural sites",
+      "Traditional mountain village life experience",
+      "Grunas waterfall full-day hiking",
+      "Valbona Valley scenic transfer (seasonal)",
+      "Local mountain family homestays",
+      "Traditional Albanian mountain cuisine",
+      "Alpine photography opportunities"
+    ],
+    "included": [
+      "5 nights mountain accommodation (guesthouses)",
+      "All meals featuring traditional mountain cuisine",
+      "Professional mountain guide and driver",
+      "4x4 mountain transportation",
+      "All hiking equipment and safety gear",
+      "Cultural site entrances",
+      "Traditional handicraft workshops",
+      "Mountain rescue insurance coverage"
+    ],
+    "meeting_point_details": "Transfer from Tirana to Shkodër included. Mountain roads require 4x4 vehicles - weather dependent routes.",
+    "languages": [
+      "English",
+      "German",
+      "Albanian"
+    ]
+  },
+  {
     "id": "tirana-walking-tour",
     "title": "Tirana Historical Walking Tour",
     "short_description": "Discover the heart of Albania's capital with our comprehensive walking tour through Tirana's most iconic landmarks.",
     "long_description": "Join us for an unforgettable journey through Tirana's rich history and vibrant culture. This tour takes you through the city's most significant sites, from the Ottoman era to communist times and modern developments. You'll learn about Albania's fascinating past while experiencing the dynamic energy of this emerging European capital.",
-    "price": 50,
+    "price": 25,
     "duration": "3 hours",
     "starting_point": "Skanderbeg Square",
     "schedule": [
-      "2025-09-15T10:00:00\r",
-      "2025-09-15T14:00:00\r",
-      "2025-09-16T10:00:00\r",
-      "2025-09-16T14:00:00\r",
-      "2025-09-17T10:00:00\r",
+      "2025-09-15T10:00:00",
+      "2025-09-15T14:00:00",
+      "2025-09-16T10:00:00",
+      "2025-09-16T14:00:00",
+      "2025-09-17T10:00:00",
       "2025-09-17T14:00:00"
     ],
     "images": [
-      "https://www.spottedbylocals.com/wp-content/uploads/2024/10/Castle-of-Tirana-1024x683.jpg.webp\r",
-      "https://www.spottedbylocals.com/wp-content/uploads/2024/10/Castle-of-Tirana-1024x683.jpg.webp"
+      "https://cdn.thecrazytourist.com/wp-content/uploads/2023/03/ccimage-shutterstock_2166444493.jpg",
+      "https://pine.al/uploads/images/2023/10/12/6528299c95185-WhatsApp%20Image%202023-10-12%20at%2018.12.36_7d65d1c5.jpg"
     ],
     "highlights": [
-      "Skanderbeg Square - the heart of Tirana\r",
-      "Et'hem Bey Mosque - 18th-century Ottoman architecture\r",
-      "National History Museum - Albania's largest museum\r",
-      "Clock Tower - panoramic city views\r",
-      "Bunk'Art 1 - Cold War bunker turned museum"
+      "Skanderbeg Square - the heart of Tirana",
+      "Et'hem Bey Mosque - 18th-century Ottoman architecture",
+      "National History Museum - Albania's largest museum",
+      "Clock Tower - panoramic city views",
+      "Bunk'Art 1 - Cold War bunker turned museum",
+      "Blloku neighborhood - former communist elite area",
+      "Grand Park and artificial lake",
+      "Mother Teresa Square",
+      "Pyramid of Tirana - controversial monument"
     ],
     "included": [
-      "Professional English-speaking guide\r",
-      "Walking tour of historical sites\r",
-      "Entry to Clock Tower\r",
-      "Small group experience (max 15 people)"
+      "Professional English-speaking guide",
+      "Walking tour of historical sites",
+      "Entry to Clock Tower",
+      "Small group experience (max 15 people)",
+      "Traditional Albanian coffee break"
     ],
     "meeting_point_details": "Meet at the Skanderbeg Monument in the center of Skanderbeg Square. Look for the guide with a red umbrella.",
     "languages": [
@@ -98,30 +322,32 @@
     "title": "Dajti Mountain & Cable Car Experience",
     "short_description": "Take the cable car up Dajti Mountain for breathtaking views of Tirana and the Albanian coastline.",
     "long_description": "Experience Albania's natural beauty with a trip to Dajti Mountain National Park. Take the modern cable car system up to 1,000 meters above sea level for spectacular panoramic views. Enjoy hiking trails, traditional Albanian cuisine at mountain restaurants, and fresh mountain air just minutes from downtown Tirana.",
-    "price": 50,
+    "price": 45,
     "duration": "4 hours",
     "starting_point": "Dajti Ekspres Cable Car Station",
     "schedule": [
-      "2025-09-15T09:00:00\r",
-      "2025-09-15T13:00:00\r",
-      "2025-09-16T09:00:00\r",
+      "2025-09-15T09:00:00",
+      "2025-09-15T13:00:00",
+      "2025-09-16T09:00:00",
       "2025-09-16T13:00:00"
     ],
     "images": [
-      "https://albaniatourguide.com/wp-content/uploads/2020/12/Dajti-cable-car-Shutterstock-1200-68.jpg\r",
+      "https://dajtiekspres.com/wp-content/uploads/2022/12/wall-faqe-e-pare-5.jpg",
       "https://albaniatourguide.com/wp-content/uploads/2020/12/Dajti-cable-car-Shutterstock-1200-68.jpg"
     ],
     "highlights": [
-      "Cable car ride with panoramic views\r",
-      "Dajti Mountain National Park exploration\r",
-      "Traditional Albanian mountain cuisine\r",
-      "Hiking trails for all levels\r",
-      "Adventure park activities"
+      "Cable car ride with panoramic views",
+      "Dajti Mountain National Park exploration",
+      "Traditional Albanian mountain cuisine",
+      "Hiking trails for all levels",
+      "Adventure park activities",
+      "Spectacular photo opportunities",
+      "Fresh mountain air and nature"
     ],
     "included": [
-      "Round-trip cable car tickets\r",
-      "Professional mountain guide\r",
-      "Traditional lunch at mountain restaurant\r",
+      "Round-trip cable car tickets",
+      "Professional mountain guide",
+      "Traditional lunch at mountain restaurant",
       "Hiking equipment if needed"
     ],
     "meeting_point_details": "Meet at the Dajti Ekspres Cable Car Station entrance. Transportation from city center can be arranged.",
@@ -132,71 +358,36 @@
     ]
   },
   {
-    "id": "bunk-art-communist-history",
-    "title": "Communist History & Bunk'Art Museums",
-    "short_description": "Explore Albania's communist past through the fascinating Bunk'Art underground bunker museums.",
-    "long_description": "Delve deep into Albania's communist era with visits to both Bunk'Art museums. These former military bunkers have been transformed into multimedia museums showcasing Albania's history from 1912 to 1991. Learn about life under Enver Hoxha's regime, see authentic artifacts, and understand how Albania became one of the world's most isolated countries.",
-    "price": 50,
-    "duration": "3.5 hours",
-    "starting_point": "Bunk'Art 1 Entrance",
-    "schedule": [
-      "2025-09-15T10:30:00\r",
-      "2025-09-16T10:30:00\r",
-      "2025-09-17T10:30:00"
-    ],
-    "images": [
-      "https://media.bookmybooking.com/cache/uploads/filemanager/catalog/TOUR_ACTIVITY/ALBANIA/BUNK_ART_2/01-840x345.webp\r",
-      "https://media.bookmybooking.com/cache/uploads/filemanager/catalog/TOUR_ACTIVITY/ALBANIA/BUNK_ART_2/01-840x345.webp"
-    ],
-    "highlights": [
-      "Bunk'Art 1 - former government nuclear bunker\r",
-      "Bunk'Art 2 - Ministry of Interior bunker\r",
-      "Authentic communist-era artifacts\r",
-      "Interactive multimedia exhibitions\r",
-      "Stories of survival and resistance"
-    ],
-    "included": [
-      "Entry tickets to both Bunk'Art museums\r",
-      "Expert historian guide\r",
-      "Audio guide system\r",
-      "Transportation between sites"
-    ],
-    "meeting_point_details": "Meet at the Bunk'Art 1 entrance on Fadil Deliu Street. Look for the guide with a blue badge.",
-    "languages": [
-      "English",
-      "French",
-      "Albanian"
-    ]
-  },
-  {
     "id": "food-culture-tour",
     "title": "Tirana Food & Culture Experience",
     "short_description": "Taste authentic Albanian cuisine while exploring local markets, traditional restaurants, and cultural sites.",
     "long_description": "Immerse yourself in Albanian culinary traditions with this comprehensive food and culture tour. Visit local markets, taste traditional dishes, learn about Albanian coffee culture, and discover how cuisine reflects the country's diverse cultural influences from Ottoman, Italian, and Balkan traditions.",
-    "price": 50,
+    "price": 55,
     "duration": "4.5 hours",
     "starting_point": "New Bazaar (Pazari i Ri)",
     "schedule": [
-      "2025-09-15T11:00:00\r",
-      "2025-09-16T11:00:00\r",
+      "2025-09-15T11:00:00",
+      "2025-09-16T11:00:00",
       "2025-09-17T11:00:00"
     ],
     "images": [
-      "https://www.ariatravelalbania.com/wp-content/uploads/2024/03/mrizi_zanave_table_organic_food.jpeg.webp\r",
+      "https://wia.al/wp-content/uploads/2024/10/Albanian_food_dishes.jpg",
       "https://www.ariatravelalbania.com/wp-content/uploads/2024/03/mrizi_zanave_table_organic_food.jpeg.webp"
     ],
     "highlights": [
-      "New Bazaar fresh market exploration\r",
-      "Traditional byrek and bakery tastings\r",
-      "Albanian coffee ceremony\r",
-      "Local restaurant experiences\r",
-      "Raki tasting (national spirit)"
+      "New Bazaar fresh market exploration",
+      "Traditional byrek and bakery tastings",
+      "Albanian coffee ceremony",
+      "Local restaurant experiences",
+      "Raki tasting (national spirit)",
+      "Traditional cooking demonstration",
+      "Local family kitchen visit"
     ],
     "included": [
-      "Professional food guide\r",
-      "All food and drink tastings\r",
-      "Market tour and explanations\r",
-      "Traditional 3-course lunch\r",
+      "Professional food guide",
+      "All food and drink tastings",
+      "Market tour and explanations",
+      "Traditional 3-course lunch",
       "Recipe cards to take home"
     ],
     "meeting_point_details": "Meet at the main entrance of New Bazaar (Pazari i Ri) near the fountain. Look for the guide with a green apron.",

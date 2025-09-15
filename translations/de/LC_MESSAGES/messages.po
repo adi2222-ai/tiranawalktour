@@ -1,20 +1,149 @@
-# German translations for PROJECT.
-# Copyright (C) 2025 ORGANIZATION
+
+# German translations for Albania Walk Tour.
+# Copyright (C) 2025 Albania Walk Tour
 # This file is distributed under the same license as the PROJECT project.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PROJECT VERSION\n"
-"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"Project-Id-Version: Albania Walk Tour 1.0\n"
+"Report-Msgid-Bugs-To: info@albaniawalktour.com\n"
 "POT-Creation-Date: 2025-09-15 10:02+0000\n"
 "PO-Revision-Date: 2025-09-15 10:02+0000\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Albania Walk Tour Team\n"
 "Language: de\n"
-"Language-Team: de <LL@li.org>\n"
+"Language-Team: German\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 
+msgid "Home"
+msgstr "Startseite"
+
+msgid "About"
+msgstr "Über uns"
+
+msgid "Tours"
+msgstr "Touren"
+
+msgid "Contact"
+msgstr "Kontakt"
+
+msgid "Discover Albania"
+msgstr "Entdecken Sie Albanien"
+
+msgid "Your personalized trip advisor for authentic Albanian adventures - from pristine beaches to ancient castles"
+msgstr "Ihr persönlicher Reiseberater für authentische albanische Abenteuer - von unberührten Stränden bis zu antiken Burgen"
+
+msgid "Explore Tours"
+msgstr "Touren entdecken"
+
+msgid "Why Choose Our Albanian Adventures?"
+msgstr "Warum unsere albanischen Abenteuer wählen?"
+
+msgid "We are your personal trip advisors, creating unforgettable experiences in Europe's last hidden gem. Discover authentic Albania with local expertise and personalized service."
+msgstr "Wir sind Ihre persönlichen Reiseberater und schaffen unvergessliche Erlebnisse in Europas letztem versteckten Juwel. Entdecken Sie das authentische Albanien mit lokaler Expertise und persönlichem Service."
+
+msgid "Expert Local Guides"
+msgstr "Erfahrene lokale Führer"
+
+msgid "Native Albanian guides with deep cultural knowledge and fluency in multiple languages"
+msgstr "Einheimische albanische Führer mit tiefem kulturellem Wissen und Mehrsprachigkeit"
+
+msgid "Personalized Experiences"
+msgstr "Personalisierte Erlebnisse"
+
+msgid "Customized itineraries tailored to your interests, from history and culture to beaches and mountains"
+msgstr "Maßgeschneiderte Reiserouten nach Ihren Interessen, von Geschichte und Kultur bis zu Stränden und Bergen"
+
+msgid "Authentic Cultural Immersion"
+msgstr "Authentisches kulturelles Eintauchen"
+
+msgid "Experience real Albanian life - traditional cuisine, local families, and hidden gems off the tourist trail"
+msgstr "Erleben Sie das echte albanische Leben - traditionelle Küche, lokale Familien und versteckte Perlen abseits der Touristenpfade"
+
+msgid "Small Group Experience"
+msgstr "Kleine Gruppenerfahrung"
+
+msgid "Maximum 16 people per tour for intimate experiences and personalized attention"
+msgstr "Maximal 16 Personen pro Tour für intime Erlebnisse und persönliche Betreuung"
+
+msgid "UNESCO World Heritage"
+msgstr "UNESCO-Weltkulturerbe"
+
+msgid "Visit ancient Butrint, medieval Berat and Gjirokastër with expert historical commentary"
+msgstr "Besuchen Sie das antike Butrint, das mittelalterliche Berat und Gjirokastër mit fachkundigen historischen Kommentaren"
+
+msgid "Culinary Adventures"
+msgstr "Kulinarische Abenteuer"
+
+msgid "Taste authentic Albanian cuisine and learn family recipes from local cooks"
+msgstr "Kosten Sie authentische albanische Küche und lernen Sie Familienrezepte von lokalen Köchen"
+
+msgid "Our Signature Tours"
+msgstr "Unsere Signature-Touren"
+
+msgid "From quick city walks to week-long adventures - discover Albania your way with our carefully crafted experiences"
+msgstr "Von schnellen Stadtspaziergängen bis zu wochenlangen Abenteuern - entdecken Sie Albanien auf Ihre Art mit unseren sorgfältig gestalteten Erlebnissen"
+
+msgid "Available in"
+msgstr "Verfügbar in"
+
+msgid "Learn More"
+msgstr "Mehr erfahren"
+
+msgid "What Our Travelers Say"
+msgstr "Was unsere Reisenden sagen"
+
+msgid "An incredible week exploring Albania! Our guide was knowledgeable and passionate. The mix of history, culture, and stunning landscapes exceeded all expectations."
+msgstr "Eine unglaubliche Woche bei der Erkundung Albaniens! Unser Führer war sachkundig und leidenschaftlich. Die Mischung aus Geschichte, Kultur und atemberaubenden Landschaften übertraf alle Erwartungen."
+
+msgid "Germany"
+msgstr "Deutschland"
+
+msgid "Albania surprised us at every turn. From the warm hospitality to the untouched beaches, this tour showed us Europe's best-kept secret."
+msgstr "Albanien überraschte uns auf Schritt und Tritt. Von der herzlichen Gastfreundschaft bis zu den unberührten Stränden zeigte uns diese Tour Europas bestgehütetes Geheimnis."
+
+msgid "United Kingdom"
+msgstr "Vereinigtes Königreich"
+
+msgid "Perfect organization, authentic experiences, and incredible value for money. We felt like we were traveling with friends rather than a tour group."
+msgstr "Perfekte Organisation, authentische Erlebnisse und unglaubliches Preis-Leistungs-Verhältnis. Wir fühlten uns, als würden wir mit Freunden reisen und nicht mit einer Reisegruppe."
+
+msgid "Italy"
+msgstr "Italien"
+
+msgid "Plan Your Albanian Adventure"
+msgstr "Planen Sie Ihr albanisches Abenteuer"
+
+msgid "Ready to discover Albania? Our local experts are here to create your perfect personalized itinerary."
+msgstr "Bereit, Albanien zu entdecken? Unsere lokalen Experten sind hier, um Ihre perfekte personalisierte Reiseroute zu erstellen."
+
+msgid "Email"
+msgstr "E-Mail"
+
+msgid "Location"
+msgstr "Standort"
+
+msgid "Skanderbeg Square, Tirana, Albania"
+msgstr "Skanderbeg-Platz, Tirana, Albanien"
+
+msgid "Business Hours"
+msgstr "Öffnungszeiten"
+
+msgid "Daily: 9:00 AM - 6:00 PM"
+msgstr "Täglich: 9:00 - 18:00 Uhr"
+
+msgid "Start Planning Today"
+msgstr "Beginnen Sie heute mit der Planung"
+
+msgid "Get personalized recommendations, custom itineraries, and insider tips from our Albanian travel experts. All tours include professional multilingual guides and authentic local experiences."
+msgstr "Erhalten Sie persönliche Empfehlungen, maßgeschneiderte Reiserouten und Insider-Tipps von unseren albanischen Reiseexperten. Alle Touren beinhalten professionelle mehrsprachige Führer und authentische lokale Erlebnisse."
+
+msgid "WhatsApp Us"
+msgstr "WhatsApp uns"
+
+msgid "Send Email"
+msgstr "E-Mail senden"
