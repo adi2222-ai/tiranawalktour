@@ -174,3 +174,53 @@ msgstr "تيرانا، ألبانيا"
 
 msgid "All rights reserved."
 msgstr "جميع الحقوق محفوظة."
+
+# Tour Titles
+msgid "Albania Discovery Week - 6 Days Complete Tour"
+msgstr "أسبوع اكتشاف ألبانيا - جولة كاملة لمدة 6 أيام"
+
+msgid "Classic Albania - 6 Days Cultural Journey"
+msgstr "ألبانيا الكلاسيكية - رحلة ثقافية لمدة 6 أيام"
+
+msgid "Albanian Riviera Highlights - 5 Days Beach & Culture"
+msgstr "أبرز معالم الريفيرا الألبانية - 5 أيام شاطئ وثقافة"
+
+msgid "Southern Cultural Loop - 6 Days Archaeological Journey"
+msgstr "حلقة الجنوب الثقافية - رحلة أثرية لمدة 6 أيام"
+
+msgid "Northern Mountains & Theth - 6 Days Alpine Adventure"
+msgstr "الجبال الشمالية وثيث - مغامرة جبلية لمدة 6 أيام"
+
+msgid "Tirana Historical Walking Tour"
+msgstr "جولة تيرانا التاريخية سيراً على الأقدام"
+
+msgid "Dajti Mountain & Cable Car Experience"
+msgstr "جبل داجتي وتجربة التلفريك"
+
+msgid "Tirana Food & Culture Experience"
+msgstr "تجربة الطعام والثقافة في تيرانا"
+
+# Tour Short Descriptions
+msgid "Experience the best of Albania in 6 unforgettable days - from Tirana's history to the Albanian Riviera's stunning beaches."
+msgstr "اختبر أفضل ما في ألبانيا في 6 أيام لا تُنسى - من تاريخ تيرانا إلى الشواطئ الخلابة للريفيرا الألبانية."
+
+msgid "The perfect introduction to Albania - from Tirana's vibrant culture to UNESCO heritage sites and the stunning Albanian Riviera."
+msgstr "المقدمة المثالية لألبانيا - من ثقافة تيرانا النابضة بالحياة إلى مواقع التراث العالمي لليونسكو والريفيرا الألبانية الخلابة."
+
+msgid "Explore Albania's stunning coastline from Vlorë to Saranda, including pristine beaches, dramatic mountain passes, and ancient archaeological sites."
+msgstr "استكشف الساحل الخلاب لألبانيا من فلورا إلى ساراندا، بما في ذلك الشواطئ البكر والممرات الجبلية الدرامية والمواقع الأثرية القديمة."
+
+msgid "Immerse yourself in Albania's ancient history visiting Apollonia, Berat, Gjirokastër, and Butrint - four UNESCO and archaeological treasures."
+msgstr "انغمس في تاريخ ألبانيا القديم بزيارة أبولونيا وبيرات وجيروكاسترا وبوترينت - أربعة كنوز أثرية ومواقع تراث عالمي."
+
+msgid "Explore Albania's dramatic northern Alps, traditional mountain villages, and pristine wilderness in Theth and Valbona valleys."
+msgstr "استكشف جبال الألب الشمالية الدرامية في ألبانيا وقرى الجبال التقليدية والبرية البكر في وديان ثيث وفالبونا."
+
+msgid "Discover the heart of Albania's capital with our comprehensive walking tour through Tirana's most iconic landmarks."
+msgstr "اكتشف قلب عاصمة ألبانيا مع جولتنا الشاملة سيراً على الأقدام عبر أشهر معالم تيرانا."
+
+msgid "Take the cable car up Dajti Mountain for breathtaking views of Tirana and the Albanian coastline."
+msgstr "اركب التلفريك إلى جبل داجتي للحصول على مناظر خلابة لتيرانا والساحل الألباني."
+
+msgid "Taste authentic Albanian cuisine while exploring local markets, traditional restaurants, and cultural sites."
+msgstr "تذوق المأكولات الألبانية الأصيلة أثناء استكشاف الأسواق المحلية والمطاعم التقليدية والمواقع الثقافية."

@@ -173,3 +173,53 @@ msgstr "Tirana, Albania"
 
 msgid "All rights reserved."
 msgstr "All rights reserved."
+
+# Tour Titles
+msgid "Albania Discovery Week - 6 Days Complete Tour"
+msgstr "Albania Discovery Week - 6 Days Complete Tour"
+
+msgid "Classic Albania - 6 Days Cultural Journey"
+msgstr "Classic Albania - 6 Days Cultural Journey"
+
+msgid "Albanian Riviera Highlights - 5 Days Beach & Culture"
+msgstr "Albanian Riviera Highlights - 5 Days Beach & Culture"
+
+msgid "Southern Cultural Loop - 6 Days Archaeological Journey"
+msgstr "Southern Cultural Loop - 6 Days Archaeological Journey"
+
+msgid "Northern Mountains & Theth - 6 Days Alpine Adventure"
+msgstr "Northern Mountains & Theth - 6 Days Alpine Adventure"
+
+msgid "Tirana Historical Walking Tour"
+msgstr "Tirana Historical Walking Tour"
+
+msgid "Dajti Mountain & Cable Car Experience"
+msgstr "Dajti Mountain & Cable Car Experience"
+
+msgid "Tirana Food & Culture Experience"
+msgstr "Tirana Food & Culture Experience"
+
+# Tour Short Descriptions
+msgid "Experience the best of Albania in 6 unforgettable days - from Tirana's history to the Albanian Riviera's stunning beaches."
+msgstr "Experience the best of Albania in 6 unforgettable days - from Tirana's history to the Albanian Riviera's stunning beaches."
+
+msgid "The perfect introduction to Albania - from Tirana's vibrant culture to UNESCO heritage sites and the stunning Albanian Riviera."
+msgstr "The perfect introduction to Albania - from Tirana's vibrant culture to UNESCO heritage sites and the stunning Albanian Riviera."
+
+msgid "Explore Albania's stunning coastline from Vlorë to Saranda, including pristine beaches, dramatic mountain passes, and ancient archaeological sites."
+msgstr "Explore Albania's stunning coastline from Vlorë to Saranda, including pristine beaches, dramatic mountain passes, and ancient archaeological sites."
+
+msgid "Immerse yourself in Albania's ancient history visiting Apollonia, Berat, Gjirokastër, and Butrint - four UNESCO and archaeological treasures."
+msgstr "Immerse yourself in Albania's ancient history visiting Apollonia, Berat, Gjirokastër, and Butrint - four UNESCO and archaeological treasures."
+
+msgid "Explore Albania's dramatic northern Alps, traditional mountain villages, and pristine wilderness in Theth and Valbona valleys."
+msgstr "Explore Albania's dramatic northern Alps, traditional mountain villages, and pristine wilderness in Theth and Valbona valleys."
+
+msgid "Discover the heart of Albania's capital with our comprehensive walking tour through Tirana's most iconic landmarks."
+msgstr "Discover the heart of Albania's capital with our comprehensive walking tour through Tirana's most iconic landmarks."
+
+msgid "Take the cable car up Dajti Mountain for breathtaking views of Tirana and the Albanian coastline."
+msgstr "Take the cable car up Dajti Mountain for breathtaking views of Tirana and the Albanian coastline."
+
+msgid "Taste authentic Albanian cuisine while exploring local markets, traditional restaurants, and cultural sites."
+msgstr "Taste authentic Albanian cuisine while exploring local markets, traditional restaurants, and cultural sites."
