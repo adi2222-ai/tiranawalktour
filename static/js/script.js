@@ -3,6 +3,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
 
+    // Language toggle functionality
+    const languageToggle = document.getElementById('language-toggle');
+    const languageDropdown = document.getElementById('language-dropdown');
+
+    if (languageToggle && languageDropdown) {
+        languageToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            languageDropdown.classList.toggle('active');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!languageToggle.contains(event.target) && !languageDropdown.contains(event.target)) {
+                languageDropdown.classList.remove('active');
+            }
+        });
+
+        // Prevent dropdown from closing when clicking inside
+        languageDropdown.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+    }
+
     if (hamburger && navMenu) {
         hamburger.addEventListener('click', function() {
             navMenu.classList.toggle('active');
