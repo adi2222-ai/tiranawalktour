@@ -295,9 +295,10 @@ section h2 {
 /* Floating Language Selector */
 .floating-language {
     position: fixed;
-    top: 30px;
+    bottom: 30px;
     right: 30px;
     z-index: 500;
+    margin-bottom: 150px;
 }
 
 .language-toggle {
@@ -335,7 +336,7 @@ section h2 {
 
 .language-dropdown {
     position: absolute;
-    top: 70px;
+    bottom: 70px;
     right: 0;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(20px);
@@ -345,7 +346,7 @@ section h2 {
     border: 1px solid rgba(255, 255, 255, 0.3);
     opacity: 0;
     visibility: hidden;
-    transform: translateY(-10px);
+    transform: translateY(10px);
     transition: all 0.3s ease;
 }
 
@@ -699,8 +700,9 @@ section h2 {
     }
 
     .floating-language {
-        top: 20px;
+        bottom: 20px;
         right: 20px;
+        margin-bottom: 130px;
     }
 
     .language-toggle {
@@ -716,6 +718,7 @@ section h2 {
     .language-dropdown {
         right: -10px;
         min-width: 140px;
+        bottom: 60px;
     }
 
     .testimonials-grid {

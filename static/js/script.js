@@ -54,6 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
         anchor.addEventListener('click', function (e) {
             const href = this.getAttribute('href');
             
+            // Skip if href is just "#"
+            if (href === '#') {
+                e.preventDefault();
+                return;
+            }
+            
             // If we're not on the homepage, go to homepage first
             if (window.location.pathname !== '/' && href.startsWith('#')) {
                 window.location.href = '/' + href;
