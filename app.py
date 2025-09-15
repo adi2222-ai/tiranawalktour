@@ -24,6 +24,7 @@ app.config['BABEL_DEFAULT_TIMEZONE'] = 'UTC'
 def _(string):
     return gettext(string)
 
+@app.template_global()
 def get_locale():
     # 1. Check URL parameter
     if request.args.get('lang'):
@@ -32,7 +33,7 @@ def get_locale():
     if 'language' in session and session['language'] in app.config['LANGUAGES']:
         return session['language']
     # 3. Check browser preference
-    return request.accept_languages.best_match(app.config['LANGUAGES'].keys()) or app.config['BABEL_DEFAULT_LOCALE']
+    return request.accept_languages.best_match(app.config['LANGUAGES'].keys()) or app.config['BABEL_DEFAULT_LOCALE'
 
 babel.init_app(app, locale_selector=get_locale)
 
