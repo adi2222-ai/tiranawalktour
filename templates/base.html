@@ -96,6 +96,9 @@
                 <a href="#" onclick="openAlternativeTranslation(event)" class="translate-option alternative">
                     <span class="flag">🌐</span> Alternative Translator
                 </a>
+                <a href="#" onclick="bypassTranslation(event)" class="translate-option alternative">
+                    <span class="flag">🔧</span> Fix Translation Issues
+                </a>
             </div>
         </div>
         <div class="ai-assistant-container">
@@ -144,37 +147,55 @@
         }
 
         function getOriginalUrl() {
-            // Always return the current clean URL without translation parameters
             let currentUrl = window.location.href;
             
-            // Remove Google Translate artifacts
-            if (currentUrl.includes('translate.google.com')) {
-                // Extract original URL from various Google Translate patterns
-                let originalUrl = '';
-                
-                // Pattern 1: ?u= parameter
-                let match = currentUrl.match(/[?&]u=([^&]+)/);
-                if (match) {
-                    originalUrl = decodeURIComponent(match[1]);
-                }
-                
-                // Pattern 2: Direct URL in path
-                if (!originalUrl) {
-                    match = currentUrl.match(/translate\.google\.com\/translate_p\?[^#]*#auto\/[^\/]+\/(.+)/);
-                    if (match) {
-                        originalUrl = decodeURIComponent(match[1]);
-                    }
-                }
-                
-                // Fallback: construct base URL
-                if (!originalUrl || originalUrl.includes('translate.google.com')) {
-                    originalUrl = window.location.protocol + '//' + window.location.host.replace('translate.google.com', 'your-domain.repl.co');
-                }
-                
+            // If we're not on a translated page, return current URL
+            if (!currentUrl.includes('translate.google')) {
+                return currentUrl;
+            }
+            
+            // Extract the actual domain from nested translation URLs
+            let originalUrl = '';
+            
+            // Method 1: Look for the actual replit domain in the URL
+            const replitMatch = currentUrl.match(/([a-zA-Z0-9\-]+\.replit\.dev)/);
+            if (replitMatch) {
+                originalUrl = 'https://' + replitMatch[1] + '/';
                 return originalUrl;
             }
             
-            return currentUrl;
+            // Method 2: Extract from u= parameter
+            const uMatch = currentUrl.match(/[?&]u=([^&]+)/);
+            if (uMatch) {
+                let extractedUrl = decodeURIComponent(uMatch[1]);
+                // Check if extracted URL is still a translation URL
+                if (!extractedUrl.includes('translate.google')) {
+                    return extractedUrl;
+                }
+                // If it's still a translation URL, try to extract further
+                const nestedMatch = extractedUrl.match(/([a-zA-Z0-9\-]+\.replit\.dev)/);
+                if (nestedMatch) {
+                    return 'https://' + nestedMatch[1] + '/';
+                }
+            }
+            
+            // Method 3: Look for .replit.dev or similar in any part of the URL
+            const domainMatch = currentUrl.match(/(https?:\/\/[^\/\s&?]+\.replit\.dev)/);
+            if (domainMatch) {
+                return domainMatch[1] + '/';
+            }
+            
+            // Fallback: Return a clean version based on current hostname
+            // Extract the actual domain if it's embedded
+            const hostParts = window.location.hostname.split('.');
+            const replitIndex = hostParts.findIndex(part => part.includes('replit'));
+            if (replitIndex > 0) {
+                const cleanHost = hostParts.slice(0, replitIndex + 2).join('.');
+                return window.location.protocol + '//' + cleanHost + '/';
+            }
+            
+            // Final fallback - construct from current location info
+            return window.location.protocol + '//' + window.location.host + '/';
         }
 
         function translatePage(event, targetLang) {
@@ -186,38 +207,23 @@
                 dropdown.style.display = 'none';
             }
             
-            // Get current clean URL
-            let currentUrl = window.location.href;
+            // Get the clean original URL
+            let originalUrl = getOriginalUrl();
             
-            // If we're already on a translated page, get the original
-            if (currentUrl.includes('translate.google.com')) {
-                currentUrl = getOriginalUrl();
+            // Ensure we have a clean URL without any translation artifacts
+            if (originalUrl.includes('translate.google')) {
+                // If we still can't get a clean URL, use a direct approach
+                const directUrl = window.location.protocol + '//' + window.location.hostname.split('.').slice(-3).join('.') + '/';
+                originalUrl = directUrl;
             }
             
-            // Try different translation methods
-            const methods = [
-                // Method 1: Direct Google Translate link
-                `https://translate.google.com/translate?sl=auto&tl=${targetLang}&u=${encodeURIComponent(currentUrl)}`,
-                // Method 2: Alternative Google Translate format
-                `https://translate.google.com/translate?hl=en&sl=auto&tl=${targetLang}&u=${encodeURIComponent(currentUrl)}&sandbox=1`,
-                // Method 3: Embedded widget approach
-                `https://translate.googleusercontent.com/translate_c?depth=1&hl=en&rurl=translate.google.com&sl=auto&sp=nmt4&tl=${targetLang}&u=${encodeURIComponent(currentUrl)}&usg=ALkJrhhBFgHRkCjSjwGcKGKSMKMWrOhiqA`
-            ];
+            console.log('Original URL for translation:', originalUrl); // Debug log
             
-            // Try the first method
-            let translateUrl = methods[0];
+            // Create translation URL with fresh parameters
+            const translateUrl = `https://translate.google.com/translate?sl=auto&tl=${targetLang}&u=${encodeURIComponent(originalUrl)}&prev=search&pto=aue`;
             
-            // Add a small delay and try to navigate
-            try {
-                window.open(translateUrl, '_self');
-            } catch (error) {
-                // If first method fails, try opening in new tab
-                const newWindow = window.open(translateUrl, '_blank');
-                if (!newWindow) {
-                    // If popup blocked, show user message
-                    alert('Translation blocked. Please allow popups and try again, or copy this URL: ' + translateUrl);
-                }
-            }
+            // Navigate to translation
+            window.location.href = translateUrl;
         }
 
         function goToOriginal(event) {
@@ -265,6 +271,34 @@
                 }
             }
         });
+
+        // Bypass translation issues
+        function bypassTranslation(event) {
+            event.preventDefault();
+            
+            // Close the dropdown
+            const dropdown = document.getElementById('translate-dropdown');
+            if (dropdown) {
+                dropdown.style.display = 'none';
+            }
+            
+            // Force navigation to clean original URL
+            const cleanUrl = window.location.protocol + '//' + window.location.hostname.replace(/^[^.]*\./, '').replace('translate.google.com', '') + '/';
+            
+            // Show options to user
+            const choice = confirm('This will take you back to the original site. Click OK to proceed, or Cancel to stay here.');
+            
+            if (choice) {
+                // Clear any translation cookies/storage
+                try {
+                    localStorage.removeItem('googtrans');
+                    sessionStorage.clear();
+                } catch(e) {}
+                
+                // Navigate to clean URL
+                window.location.href = cleanUrl;
+            }
+        }
 
         // Alternative translation function
         function openAlternativeTranslation(event) {
