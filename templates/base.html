@@ -106,7 +106,7 @@
                     <p>Find your perfect Albanian adventure!</p>
                 </div>
                 <div class="ai-chat-container" id="ai-chat-container">
-                    <div class="ai-message assistant">
+                    <div class="ai-message assistant" id="ai-welcome-message">
                         Hello! I'm your AI trip assistant. Tell me what kind of experience you're looking for in Albania and I'll recommend the perfect tours for you! 
                         <br><br>
                         For example: "I want a 1-day cultural tour" or "Looking for adventure activities" or "Historical sites for a week-long trip"
@@ -233,6 +233,30 @@
             const panel = document.getElementById('ai-assistant-panel');
             if (panel) {
                 panel.style.display = panel.style.display === 'none' ? 'block' : 'none';
+                // Update welcome message language when opening
+                if (panel.style.display === 'block') {
+                    updateWelcomeMessage();
+                }
+            }
+        }
+
+        function updateWelcomeMessage() {
+            const currentLang = detectPageLanguage();
+            const welcomeMessage = document.getElementById('ai-welcome-message');
+            
+            const welcomeTexts = {
+                'ar': 'مرحبا! أنا مساعد الرحلات الذكي. أخبرني عن نوع التجربة التي تبحث عنها في ألبانيا وسأوصي لك بالجولات المثالية!<br><br>على سبيل المثال: "أريد جولة ثقافية ليوم واحد" أو "أبحث عن أنشطة المغامرة" أو "مواقع تاريخية لرحلة أسبوع"',
+                'es': '¡Hola! Soy tu asistente de viajes con IA. ¡Dime qué tipo de experiencia buscas en Albania y te recomendaré los tours perfectos!<br><br>Por ejemplo: "Quiero un tour cultural de 1 día" o "Busco actividades de aventura" o "Sitios históricos para un viaje de una semana"',
+                'fr': 'Bonjour! Je suis votre assistant de voyage IA. Dites-moi quel type d\'expérience vous recherchez en Albanie et je vous recommanderai les visites parfaites!<br><br>Par exemple: "Je veux une visite culturelle d\'1 jour" ou "Je cherche des activités d\'aventure" ou "Sites historiques pour un voyage d\'une semaine"',
+                'de': 'Hallo! Ich bin Ihr KI-Reiseassistent. Sagen Sie mir, welche Art von Erlebnis Sie in Albanien suchen, und ich empfehle Ihnen die perfekten Touren!<br><br>Zum Beispiel: "Ich möchte eine 1-tägige Kulturtour" oder "Suche Abenteueraktivitäten" oder "Historische Stätten für eine einwöchige Reise"',
+                'it': 'Ciao! Sono il tuo assistente di viaggio AI. Dimmi che tipo di esperienza stai cercando in Albania e ti consiglierò i tour perfetti!<br><br>Ad esempio: "Voglio un tour culturale di 1 giorno" o "Cerco attività avventurose" o "Siti storici per un viaggio di una settimana"',
+                'zh': '你好！我是您的AI旅行助手。告诉我您在阿尔巴尼亚寻找什么样的体验，我会为您推荐完美的旅游！<br><br>例如："我想要1天的文化之旅"或"寻找冒险活动"或"一周旅行的历史景点"',
+                'ru': 'Привет! Я ваш ИИ-помощник по путешествиям. Скажите мне, какой опыт вы ищете в Албании, и я порекомендую вам идеальные туры!<br><br>Например: "Хочу однодневный культурный тур" или "Ищу приключенческие активности" или "Исторические места для недельной поездки"',
+                'en': 'Hello! I\'m your AI trip assistant. Tell me what kind of experience you\'re looking for in Albania and I\'ll recommend the perfect tours for you!<br><br>For example: "I want a 1-day cultural tour" or "Looking for adventure activities" or "Historical sites for a week-long trip"'
+            };
+            
+            if (welcomeMessage && welcomeTexts[currentLang]) {
+                welcomeMessage.innerHTML = welcomeTexts[currentLang];
             }
         }
 
@@ -279,7 +303,86 @@
             }, 1500);
         }
 
+        function detectPageLanguage() {
+            // Check if we're on a translated Google page
+            const currentUrl = window.location.href;
+            
+            if (currentUrl.includes('translate.google.com')) {
+                // Extract target language from Google Translate URL
+                const match = currentUrl.match(/[?&]tl=([^&]+)/);
+                if (match) {
+                    return match[1];
+                }
+            }
+            
+            // Check document language
+            if (document.documentElement.lang && document.documentElement.lang !== 'en') {
+                return document.documentElement.lang;
+            }
+            
+            // Check for translated content indicators
+            const body = document.body.textContent.toLowerCase();
+            if (body.includes('مرحبا') || body.includes('السياحة') || body.includes('جولة')) return 'ar';
+            if (body.includes('hola') || body.includes('turismo') || body.includes('recorrido')) return 'es';
+            if (body.includes('bonjour') || body.includes('tourisme') || body.includes('visite')) return 'fr';
+            if (body.includes('hallo') || body.includes('tourismus') || body.includes('rundgang')) return 'de';
+            if (body.includes('ciao') || body.includes('turismo') || body.includes('giro')) return 'it';
+            if (body.includes('你好') || body.includes('旅游') || body.includes('参观')) return 'zh';
+            if (body.includes('привет') || body.includes('туризм') || body.includes('экскурсия')) return 'ru';
+            
+            return 'en'; // Default to English
+        }
+
+        function getLocalizedText(lang, key) {
+            const translations = {
+                'ar': {
+                    'recommendation_intro': 'بناءً على طلبك، أوصي بهذه الجولات:',
+                    'more_recommendations': 'هل تريد توصيات أكثر تحديداً؟ جرب السؤال عن: "جولات المغامرة"، "التجارب الثقافية"، "جولات الطعام"، أو "رحلات أسبوع كامل"!',
+                    'view_details': 'عرض التفاصيل'
+                },
+                'es': {
+                    'recommendation_intro': 'Basado en tu solicitud, recomiendo estos tours:',
+                    'more_recommendations': '¿Te gustaría recomendaciones más específicas? Pregunta sobre: "tours de aventura", "experiencias culturales", "tours gastronómicos", o "viajes de una semana"!',
+                    'view_details': 'Ver detalles'
+                },
+                'fr': {
+                    'recommendation_intro': 'Basé sur votre demande, je recommande ces visites:',
+                    'more_recommendations': 'Voulez-vous des recommandations plus spécifiques? Demandez à propos de: "tours d\'aventure", "expériences culturelles", "tours gastronomiques", ou "voyages d\'une semaine"!',
+                    'view_details': 'Voir détails'
+                },
+                'de': {
+                    'recommendation_intro': 'Basierend auf Ihrer Anfrage empfehle ich diese Touren:',
+                    'more_recommendations': 'Möchten Sie spezifischere Empfehlungen? Fragen Sie nach: "Abenteuertouren", "Kulturerlebnisse", "Kulinarische Touren", oder "Wochenreisen"!',
+                    'view_details': 'Details anzeigen'
+                },
+                'it': {
+                    'recommendation_intro': 'Basato sulla tua richiesta, raccomando questi tour:',
+                    'more_recommendations': 'Vuoi raccomandazioni più specifiche? Chiedi di: "tour avventura", "esperienze culturali", "tour gastronomici", o "viaggi di una settimana"!',
+                    'view_details': 'Vedi dettagli'
+                },
+                'zh': {
+                    'recommendation_intro': '根据您的要求，我推荐这些旅游:',
+                    'more_recommendations': '想要更具体的建议吗？询问："冒险旅游"、"文化体验"、"美食旅游"或"一周旅行"！',
+                    'view_details': '查看详情'
+                },
+                'ru': {
+                    'recommendation_intro': 'На основе вашего запроса рекомендую эти туры:',
+                    'more_recommendations': 'Хотите более конкретные рекомендации? Спросите о: "приключенческие туры", "культурные впечатления", "гастрономические туры", или "недельные поездки"!',
+                    'view_details': 'Подробности'
+                },
+                'en': {
+                    'recommendation_intro': 'Based on your request, I recommend these tours:',
+                    'more_recommendations': 'Would you like more specific recommendations? Try asking about: "adventure tours", "cultural experiences", "food tours", or "week-long trips"!',
+                    'view_details': 'View Details'
+                }
+            };
+
+            return translations[lang] && translations[lang][key] ? translations[lang][key] : translations['en'][key];
+        }
+
         function generateAIResponse(message) {
+            const currentLang = detectPageLanguage();
+            
             const tours = [
                 {
                     id: 'classic-tirana-tour',
@@ -313,33 +416,57 @@
 
             let recommendations = [];
 
-            if (message.includes('day') || message.includes('quick') || message.includes('short')) {
+            // Multi-language keyword matching
+            const keywords = {
+                day: ['day', 'día', 'jour', 'tag', 'giorno', '天', 'день', 'يوم'],
+                quick: ['quick', 'rápido', 'rapide', 'schnell', 'veloce', '快速', 'быстрый', 'سريع'],
+                short: ['short', 'corto', 'court', 'kurz', 'breve', '短', 'короткий', 'قصير'],
+                adventure: ['adventure', 'aventura', 'aventure', 'abenteuer', 'avventura', '冒险', 'приключение', 'مغامرة'],
+                mountain: ['mountain', 'montaña', 'montagne', 'berg', 'montagna', '山', 'гора', 'جبل'],
+                hiking: ['hiking', 'senderismo', 'randonnée', 'wandern', 'escursionismo', '徒步', 'пешие прогулки', 'المشي'],
+                food: ['food', 'comida', 'nourriture', 'essen', 'cibo', '食物', 'еда', 'طعام'],
+                cuisine: ['cuisine', 'cocina', 'cuisine', 'küche', 'cucina', '美食', 'кухня', 'مطبخ'],
+                eat: ['eat', 'comer', 'manger', 'essen', 'mangiare', '吃', 'есть', 'أكل'],
+                week: ['week', 'semana', 'semaine', 'woche', 'settimana', '周', 'неделя', 'أسبوع'],
+                long: ['long', 'largo', 'long', 'lang', 'lungo', '长', 'длинный', 'طويل'],
+                complete: ['complete', 'completo', 'complet', 'vollständig', 'completo', '完整', 'полный', 'كامل'],
+                everything: ['everything', 'todo', 'tout', 'alles', 'tutto', '一切', 'всё', 'كل شيء'],
+                history: ['history', 'historia', 'histoire', 'geschichte', 'storia', '历史', 'история', 'تاريخ'],
+                culture: ['culture', 'cultura', 'culture', 'kultur', 'cultura', '文化', 'культура', 'ثقافة'],
+                historical: ['historical', 'histórico', 'historique', 'historisch', 'storico', '历史的', 'исторический', 'تاريخي']
+            };
+
+            function containsKeywords(text, keywordArray) {
+                return keywordArray.some(keyword => text.includes(keyword));
+            }
+
+            if (containsKeywords(message, keywords.day) || containsKeywords(message, keywords.quick) || containsKeywords(message, keywords.short)) {
                 recommendations.push(tours[0], tours[2]);
-            } else if (message.includes('adventure') || message.includes('mountain') || message.includes('hiking')) {
+            } else if (containsKeywords(message, keywords.adventure) || containsKeywords(message, keywords.mountain) || containsKeywords(message, keywords.hiking)) {
                 recommendations.push(tours[1]);
-            } else if (message.includes('food') || message.includes('cuisine') || message.includes('eat')) {
+            } else if (containsKeywords(message, keywords.food) || containsKeywords(message, keywords.cuisine) || containsKeywords(message, keywords.eat)) {
                 recommendations.push(tours[2]);
-            } else if (message.includes('week') || message.includes('long') || message.includes('complete') || message.includes('everything')) {
+            } else if (containsKeywords(message, keywords.week) || containsKeywords(message, keywords.long) || containsKeywords(message, keywords.complete) || containsKeywords(message, keywords.everything)) {
                 recommendations.push(tours[3]);
-            } else if (message.includes('history') || message.includes('culture') || message.includes('historical')) {
+            } else if (containsKeywords(message, keywords.history) || containsKeywords(message, keywords.culture) || containsKeywords(message, keywords.historical)) {
                 recommendations.push(tours[0], tours[3]);
             } else {
                 // Default recommendations
                 recommendations.push(tours[0], tours[2]);
             }
 
-            let response = "Based on your request, I recommend these tours:\n\n";
+            let response = getLocalizedText(currentLang, 'recommendation_intro') + '\n\n';
             
             recommendations.forEach(tour => {
                 response += `<div class="tour-recommendation">
                     <h4>${tour.title}</h4>
                     <p><strong>€${tour.price}</strong> • ${tour.duration}</p>
                     <p>${tour.description}</p>
-                    <a href="/tour/${tour.id}" class="tour-link">View Details</a>
+                    <a href="/tour/${tour.id}" class="tour-link">${getLocalizedText(currentLang, 'view_details')}</a>
                 </div>`;
             });
 
-            response += "\n\nWould you like more specific recommendations? Try asking about: 'adventure tours', 'cultural experiences', 'food tours', or 'week-long trips'!";
+            response += '\n\n' + getLocalizedText(currentLang, 'more_recommendations');
 
             return response;
         }
