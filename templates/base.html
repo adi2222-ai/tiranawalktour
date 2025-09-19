@@ -286,60 +286,109 @@
                     title: 'Classic Tirana Walking Tour',
                     price: 35,
                     duration: '3 hours',
-                    description: 'Perfect introduction to Tirana with major landmarks and history'
+                    description: 'Perfect introduction to Tirana with major landmarks and history',
+                    keywords: ['classic', 'walking', 'city', 'landmarks', 'history', 'cultural', 'short', 'quick', 'half', 'morning', 'afternoon']
                 },
                 {
                     id: 'dajti-mountain-tour',
                     title: 'Dajti Mountain Adventure',
                     price: 65,
                     duration: 'Full Day',
-                    description: 'Cable car ride and mountain hiking with stunning views'
+                    description: 'Cable car ride and mountain hiking with stunning views',
+                    keywords: ['mountain', 'adventure', 'hiking', 'cable', 'car', 'nature', 'outdoor', 'views', 'panoramic', 'fresh', 'air']
                 },
                 {
                     id: 'food-culture-tour',
                     title: 'Food & Culture Experience',
                     price: 55,
                     duration: '4 hours',
-                    description: 'Taste authentic Albanian cuisine and learn about local culture'
+                    description: 'Taste authentic Albanian cuisine and learn about local culture',
+                    keywords: ['food', 'cuisine', 'eat', 'taste', 'restaurant', 'local', 'traditional', 'cooking', 'gastronomy', 'culture']
                 },
                 {
                     id: 'albania-week-tour',
                     title: 'Albania Highlights Week Tour',
                     price: 899,
                     duration: '6 days',
-                    description: 'Complete Albanian experience from Tirana to the coast'
+                    description: 'Complete Albanian experience from Tirana to the coast',
+                    keywords: ['week', 'long', 'complete', 'everything', 'comprehensive', 'multi-day', 'extended', 'full', 'coast', 'beach']
                 }
             ];
 
             let recommendations = [];
+            let personalizedMessage = "";
 
-            if (message.includes('day') || message.includes('quick') || message.includes('short')) {
-                recommendations.push(tours[0], tours[2]);
-            } else if (message.includes('adventure') || message.includes('mountain') || message.includes('hiking')) {
-                recommendations.push(tours[1]);
-            } else if (message.includes('food') || message.includes('cuisine') || message.includes('eat')) {
-                recommendations.push(tours[2]);
-            } else if (message.includes('week') || message.includes('long') || message.includes('complete') || message.includes('everything')) {
-                recommendations.push(tours[3]);
-            } else if (message.includes('history') || message.includes('culture') || message.includes('historical')) {
-                recommendations.push(tours[0], tours[3]);
+            // More intelligent keyword matching
+            const keywords = message.toLowerCase().split(' ');
+            
+            // Calculate relevance scores for each tour
+            const tourScores = tours.map(tour => {
+                let score = 0;
+                keywords.forEach(keyword => {
+                    tour.keywords.forEach(tourKeyword => {
+                        if (keyword.includes(tourKeyword) || tourKeyword.includes(keyword)) {
+                            score += 1;
+                        }
+                    });
+                });
+                return { tour, score };
+            });
+
+            // Sort by relevance and get top matches
+            tourScores.sort((a, b) => b.score - a.score);
+            
+            if (tourScores[0].score > 0) {
+                recommendations = tourScores.filter(ts => ts.score > 0).map(ts => ts.tour);
+                if (recommendations.length > 3) recommendations = recommendations.slice(0, 3);
             } else {
-                // Default recommendations
-                recommendations.push(tours[0], tours[2]);
+                // Fallback to pattern matching
+                if (message.includes('day') || message.includes('quick') || message.includes('short') || message.includes('3') || message.includes('three')) {
+                    recommendations.push(tours[0], tours[2]);
+                    personalizedMessage = "I see you're looking for shorter experiences! Here are some great options:";
+                } else if (message.includes('adventure') || message.includes('mountain') || message.includes('hiking') || message.includes('nature')) {
+                    recommendations.push(tours[1]);
+                    personalizedMessage = "Perfect! For adventure lovers, I have just the thing:";
+                } else if (message.includes('food') || message.includes('cuisine') || message.includes('eat') || message.includes('restaurant')) {
+                    recommendations.push(tours[2]);
+                    personalizedMessage = "A fellow food enthusiast! You'll love this culinary experience:";
+                } else if (message.includes('week') || message.includes('long') || message.includes('complete') || message.includes('everything') || message.includes('6') || message.includes('six')) {
+                    recommendations.push(tours[3]);
+                    personalizedMessage = "For the ultimate Albanian adventure, this comprehensive tour is perfect:";
+                } else if (message.includes('history') || message.includes('culture') || message.includes('historical') || message.includes('museum')) {
+                    recommendations.push(tours[0], tours[3]);
+                    personalizedMessage = "Great choice! History and culture enthusiasts will enjoy these tours:";
+                } else if (message.includes('budget') || message.includes('cheap') || message.includes('affordable')) {
+                    recommendations = tours.sort((a, b) => a.price - b.price).slice(0, 2);
+                    personalizedMessage = "Here are our most budget-friendly options:";
+                } else if (message.includes('luxury') || message.includes('premium') || message.includes('best')) {
+                    recommendations.push(tours[3], tours[1]);
+                    personalizedMessage = "For a premium experience, these tours offer the best value:";
+                } else {
+                    recommendations.push(tours[0], tours[2]);
+                    personalizedMessage = "Here are our most popular tours to get you started:";
+                }
             }
 
-            let response = "Based on your request, I recommend these tours:\n\n";
+            let response = personalizedMessage || "Based on your request, I recommend these tours:";
+            response += "\n\n";
             
             recommendations.forEach(tour => {
-                response += `<div class="tour-recommendation">
+                response += `<div class="tour-recommendation" onclick="window.location.href='/tour/${tour.id}'" style="cursor: pointer;">
                     <h4>${tour.title}</h4>
                     <p><strong>€${tour.price}</strong> • ${tour.duration}</p>
                     <p>${tour.description}</p>
-                    <a href="/tour/${tour.id}" class="tour-link">View Details</a>
+                    <div class="tour-actions">
+                        <button onclick="event.stopPropagation(); window.location.href='/tour/${tour.id}'" class="tour-link-btn">View Details & Book</button>
+                    </div>
                 </div>`;
             });
 
-            response += "\n\nWould you like more specific recommendations? Try asking about: 'adventure tours', 'cultural experiences', 'food tours', or 'week-long trips'!";
+            // Add helpful follow-up suggestions
+            if (recommendations.length === 1) {
+                response += "\n\n💡 Want to see more options? Try asking about: 'show me all tours' or 'what else do you have?'";
+            } else {
+                response += "\n\n💡 Need help deciding? Ask me: 'which tour is best for families?' or 'what's the difference between these tours?'";
+            }
 
             return response;
         }

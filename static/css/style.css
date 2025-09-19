@@ -509,37 +509,86 @@ section h2 {
 }
 
 .tour-recommendation {
-    background: rgba(0, 113, 227, 0.05);
-    border: 1px solid rgba(0, 113, 227, 0.2);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 8px 0;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 18px;
+    margin: 12px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tour-recommendation:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 123, 255, 0.15);
+    border-color: #007bff;
+}
+
+.tour-recommendation::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #007bff, #0056b3);
 }
 
 .tour-recommendation h4 {
-    margin: 0 0 5px 0;
-    color: #0071e3;
-    font-size: 0.9rem;
+    margin: 0 0 10px 0;
+    color: #007bff;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .tour-recommendation p {
-    margin: 0 0 8px 0;
-    font-size: 0.8rem;
-    color: #6e6e73;
+    margin: 6px 0;
+    font-size: 14px;
+    line-height: 1.5;
 }
 
-.tour-recommendation .tour-link {
-    display: inline-block;
-    background: #0071e3;
+.tour-recommendation p:first-of-type {
+    font-weight: 600;
+    color: #28a745;
+}
+
+.tour-actions {
+    margin-top: 12px;
+    text-align: right;
+}
+
+.tour-link-btn {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
     color: white;
-    padding: 4px 12px;
-    border-radius: 12px;
-    text-decoration: none;
-    font-size: 0.8rem;
-    transition: background-color 0.3s ease;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 123, 255, 0.3);
 }
 
-.tour-recommendation .tour-link:hover {
+.tour-link-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(135deg, #0056b3 0%, #003d82 100%);
+}
+
+.tour-link {
+    display: inline-block;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.tour-link:hover {
     background: #0056b3;
 }
 
