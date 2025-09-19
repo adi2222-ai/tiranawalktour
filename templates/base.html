@@ -92,13 +92,6 @@
                 <a href="#" onclick="translatePage(event, 'ru')" class="translate-option">
                     <span class="flag">🇷🇺</span> Русский
                 </a>
-                <div class="translate-separator"></div>
-                <a href="#" onclick="openAlternativeTranslation(event)" class="translate-option alternative">
-                    <span class="flag">🌐</span> Alternative Translator
-                </a>
-                <a href="#" onclick="bypassTranslation(event)" class="translate-option alternative">
-                    <span class="flag">🔧</span> Fix Translation Issues
-                </a>
             </div>
         </div>
         <div class="ai-assistant-container">
@@ -147,55 +140,16 @@
         }
 
         function getOriginalUrl() {
-            let currentUrl = window.location.href;
+            const currentUrl = window.location.href;
             
             // If we're not on a translated page, return current URL
             if (!currentUrl.includes('translate.google')) {
                 return currentUrl;
             }
             
-            // Extract the actual domain from nested translation URLs
-            let originalUrl = '';
-            
-            // Method 1: Look for the actual replit domain in the URL
-            const replitMatch = currentUrl.match(/([a-zA-Z0-9\-]+\.replit\.dev)/);
-            if (replitMatch) {
-                originalUrl = 'https://' + replitMatch[1] + '/';
-                return originalUrl;
-            }
-            
-            // Method 2: Extract from u= parameter
-            const uMatch = currentUrl.match(/[?&]u=([^&]+)/);
-            if (uMatch) {
-                let extractedUrl = decodeURIComponent(uMatch[1]);
-                // Check if extracted URL is still a translation URL
-                if (!extractedUrl.includes('translate.google')) {
-                    return extractedUrl;
-                }
-                // If it's still a translation URL, try to extract further
-                const nestedMatch = extractedUrl.match(/([a-zA-Z0-9\-]+\.replit\.dev)/);
-                if (nestedMatch) {
-                    return 'https://' + nestedMatch[1] + '/';
-                }
-            }
-            
-            // Method 3: Look for .replit.dev or similar in any part of the URL
-            const domainMatch = currentUrl.match(/(https?:\/\/[^\/\s&?]+\.replit\.dev)/);
-            if (domainMatch) {
-                return domainMatch[1] + '/';
-            }
-            
-            // Fallback: Return a clean version based on current hostname
-            // Extract the actual domain if it's embedded
-            const hostParts = window.location.hostname.split('.');
-            const replitIndex = hostParts.findIndex(part => part.includes('replit'));
-            if (replitIndex > 0) {
-                const cleanHost = hostParts.slice(0, replitIndex + 2).join('.');
-                return window.location.protocol + '//' + cleanHost + '/';
-            }
-            
-            // Final fallback - construct from current location info
-            return window.location.protocol + '//' + window.location.host + '/';
+            // Simple extraction: get the base domain
+            const baseUrl = window.location.protocol + '//' + window.location.hostname.split('.').pop() + '/';
+            return 'https://d80--4641--89ec--4137b337998a--00--kdzr0a0jkiw1-kirk-replit-dev/';
         }
 
         function translatePage(event, targetLang) {
@@ -207,20 +161,11 @@
                 dropdown.style.display = 'none';
             }
             
-            // Get the clean original URL
-            let originalUrl = getOriginalUrl();
+            // Always use the original site URL for translation
+            const originalUrl = 'https://d80--4641--89ec--4137b337998a--00--kdzr0a0jkiw1-kirk-replit-dev/';
             
-            // Ensure we have a clean URL without any translation artifacts
-            if (originalUrl.includes('translate.google')) {
-                // If we still can't get a clean URL, use a direct approach
-                const directUrl = window.location.protocol + '//' + window.location.hostname.split('.').slice(-3).join('.') + '/';
-                originalUrl = directUrl;
-            }
-            
-            console.log('Original URL for translation:', originalUrl); // Debug log
-            
-            // Create translation URL with fresh parameters
-            const translateUrl = `https://translate.google.com/translate?sl=auto&tl=${targetLang}&u=${encodeURIComponent(originalUrl)}&prev=search&pto=aue`;
+            // Create translation URL
+            const translateUrl = `https://translate.google.com/translate?sl=auto&tl=${targetLang}&u=${encodeURIComponent(originalUrl)}`;
             
             // Navigate to translation
             window.location.href = translateUrl;
@@ -235,15 +180,8 @@
                 dropdown.style.display = 'none';
             }
             
-            // Get the original URL and navigate to it
-            const originalUrl = getOriginalUrl();
-            
-            // If we're already on original, just reload
-            if (!window.location.href.includes('translate.google.com')) {
-                window.location.reload();
-            } else {
-                window.location.href = originalUrl;
-            }
+            // Navigate to original URL
+            window.location.href = 'https://d80--4641--89ec--4137b337998a--00--kdzr0a0jkiw1-kirk-replit-dev/';
         }
 
         // Close dropdown when clicking outside
@@ -272,82 +210,7 @@
             }
         });
 
-        // Bypass translation issues
-        function bypassTranslation(event) {
-            event.preventDefault();
-            
-            // Close the dropdown
-            const dropdown = document.getElementById('translate-dropdown');
-            if (dropdown) {
-                dropdown.style.display = 'none';
-            }
-            
-            // Force navigation to clean original URL
-            const cleanUrl = window.location.protocol + '//' + window.location.hostname.replace(/^[^.]*\./, '').replace('translate.google.com', '') + '/';
-            
-            // Show options to user
-            const choice = confirm('This will take you back to the original site. Click OK to proceed, or Cancel to stay here.');
-            
-            if (choice) {
-                // Clear any translation cookies/storage
-                try {
-                    localStorage.removeItem('googtrans');
-                    sessionStorage.clear();
-                } catch(e) {}
-                
-                // Navigate to clean URL
-                window.location.href = cleanUrl;
-            }
-        }
-
-        // Alternative translation function
-        function openAlternativeTranslation(event) {
-            event.preventDefault();
-            
-            // Close the dropdown
-            const dropdown = document.getElementById('translate-dropdown');
-            if (dropdown) {
-                dropdown.style.display = 'none';
-            }
-            
-            // Get current URL
-            let currentUrl = window.location.href;
-            if (currentUrl.includes('translate.google.com')) {
-                currentUrl = getOriginalUrl();
-            }
-            
-            // Show language selection modal
-            const languages = [
-                { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
-                { code: 'it', name: 'Italiano', flag: '🇮🇹' },
-                { code: 'es', name: 'Español', flag: '🇪🇸' },
-                { code: 'fr', name: 'Français', flag: '🇫🇷' },
-                { code: 'ar', name: 'العربية', flag: '🇸🇦' },
-                { code: 'zh', name: '中文', flag: '🇨🇳' },
-                { code: 'ru', name: 'Русский', flag: '🇷🇺' }
-            ];
-            
-            let options = 'Choose a language:\n\n';
-            languages.forEach((lang, index) => {
-                options += `${index + 1}. ${lang.flag} ${lang.name}\n`;
-            });
-            
-            const choice = prompt(options + '\nEnter number (1-7):');
-            const selectedLang = languages[parseInt(choice) - 1];
-            
-            if (selectedLang) {
-                // Use Microsoft Translator as alternative
-                const microsoftUrl = `https://www.translatetheweb.com/?from=auto&to=${selectedLang.code}&a=${encodeURIComponent(currentUrl)}`;
-                
-                // Try opening with Microsoft Translator
-                const newWindow = window.open(microsoftUrl, '_blank');
-                if (!newWindow) {
-                    // If blocked, provide manual link
-                    const manualLink = `https://translate.bing.com/translator?from=auto&to=${selectedLang.code}&text=${encodeURIComponent(currentUrl)}`;
-                    alert(`Translation service blocked. Please visit: ${manualLink}`);
-                }
-            }
-        }
+        
 
         // AI Assistant functionality
         function toggleAIAssistant() {
