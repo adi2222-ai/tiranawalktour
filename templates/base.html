@@ -59,6 +59,39 @@
     </footer>
 
 
+    <!-- Floating Translation Button -->
+    <div class="floating-translate">
+        <div class="translate-toggle" id="translate-toggle" onclick="toggleTranslateOptions()">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+            </svg>
+            <span>Translate</span>
+        </div>
+        <div class="translate-dropdown" id="translate-dropdown" style="display: none;">
+            <a href="#" onclick="translatePage('de')" class="translate-option">
+                <span class="flag">🇩🇪</span> Deutsch
+            </a>
+            <a href="#" onclick="translatePage('it')" class="translate-option">
+                <span class="flag">🇮🇹</span> Italiano
+            </a>
+            <a href="#" onclick="translatePage('es')" class="translate-option">
+                <span class="flag">🇪🇸</span> Español
+            </a>
+            <a href="#" onclick="translatePage('fr')" class="translate-option">
+                <span class="flag">🇫🇷</span> Français
+            </a>
+            <a href="#" onclick="translatePage('ar')" class="translate-option">
+                <span class="flag">🇸🇦</span> العربية
+            </a>
+            <a href="#" onclick="translatePage('zh')" class="translate-option">
+                <span class="flag">🇨🇳</span> 中文
+            </a>
+            <a href="#" onclick="translatePage('ru')" class="translate-option">
+                <span class="flag">🇷🇺</span> Русский
+            </a>
+        </div>
+    </div>
+
     <!-- Floating Contact Icons -->
     <div class="floating-contacts">
         <a href="https://wa.me/+35569123456" class="contact-icon whatsapp" target="_blank">
@@ -74,5 +107,33 @@
     </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        function toggleTranslateOptions() {
+            const dropdown = document.getElementById('translate-dropdown');
+            dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function translatePage(targetLang) {
+            // Close the dropdown
+            document.getElementById('translate-dropdown').style.display = 'none';
+            
+            // Use Google Translate to translate the page
+            const currentUrl = encodeURIComponent(window.location.href);
+            const translateUrl = `https://translate.google.com/translate?sl=en&tl=${targetLang}&u=${currentUrl}`;
+            
+            // Open translated page in the same window
+            window.location.href = translateUrl;
+        }
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', function(event) {
+            const translateToggle = document.getElementById('translate-toggle');
+            const translateDropdown = document.getElementById('translate-dropdown');
+            
+            if (!translateToggle.contains(event.target) && !translateDropdown.contains(event.target)) {
+                translateDropdown.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
