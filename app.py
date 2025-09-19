@@ -44,9 +44,9 @@ def set_language(language=None):
         session['language'] = language
     return redirect(request.referrer or url_for('index'))
 
-# Admin credentials (built-in)
-ADMIN_USERNAME = "TiTirana"
-ADMIN_PASSWORD = "TiTirana"
+# Admin credentials (from environment variables for security)
+ADMIN_USERNAME = os.environ.get('ADMIN_USERNAME', 'admin')
+ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD', 'admin123')
 
 # Load tour data
 def load_tours():
