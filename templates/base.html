@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ get_locale() }}" {% if get_locale() == 'ar' %}dir="rtl"{% endif %}>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +8,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
 </head>
-<body {% if get_locale() == 'ar' %}dir="rtl"{% endif %}>
+<body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <a href="{{ url_for('index') }}" class="nav-logo">Albania Walk Tour</a>
             <div class="nav-menu" id="nav-menu">
-                <a href="{{ url_for('index') }}" class="nav-link">{{ _('Home') }}</a>
-                <a href="{{ url_for('about') }}" class="nav-link">{{ _('About') }}</a>
-                <a href="#tours" class="nav-link">{{ _('Tours') }}</a>
-                <a href="#contact" class="nav-link">{{ _('Contact') }}</a>
+                <a href="{{ url_for('index') }}" class="nav-link">Home</a>
+                <a href="{{ url_for('about') }}" class="nav-link">About</a>
+                <a href="#tours" class="nav-link">Tours</a>
+                <a href="#contact" class="nav-link">Contact</a>
                 
             </div>
             <div class="hamburger" id="hamburger">
@@ -38,49 +38,26 @@
         <div class="footer-container">
             <div class="footer-section">
                 <h3>Albania Walk Tour</h3>
-                <p>{{ _('Discover the beauty and history of Albania\'s vibrant capital with our expert local guides.') }}</p>
+                <p>Discover the beauty and history of Albania's vibrant capital with our expert local guides.</p>
             </div>
             <div class="footer-section">
-                <h4>{{ _('Quick Links') }}</h4>
-                <a href="{{ url_for('index') }}">{{ _('Home') }}</a>
-                <a href="{{ url_for('about') }}">{{ _('About') }}</a>
-                <a href="#tours">{{ _('Tours') }}</a>
+                <h4>Quick Links</h4>
+                <a href="{{ url_for('index') }}">Home</a>
+                <a href="{{ url_for('about') }}">About</a>
+                <a href="#tours">Tours</a>
             </div>
             <div class="footer-section">
-                <h4>{{ _('Contact Info') }}</h4>
-                <p>{{ _('Email') }}: info@albaniawalktour.com</p>
-                <p>{{ _('Phone') }}: +355 69 123 4567</p>
-                <p>{{ _('Location') }}: {{ _('Tirana, Albania') }}</p>
+                <h4>Contact Info</h4>
+                <p>Email: info@albaniawalktour.com</p>
+                <p>Phone: +355 69 123 4567</p>
+                <p>Location: Tirana, Albania</p>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 Albania Walk Tour. {{ _('All rights reserved.') }}</p>
+            <p>&copy; 2025 Albania Walk Tour. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Floating Language Selector -->
-    <div class="floating-language">
-        <div class="language-toggle" id="language-toggle">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
-            </svg>
-            <span id="current-language">{{ get_locale().upper() }}</span>
-        </div>
-        <div class="language-dropdown" id="language-dropdown">
-            <a href="#" onclick="changeLanguage('en')" class="language-option {% if get_locale() == 'en' %}active{% endif %}">
-                <span class="flag">🇺🇸</span> English
-            </a>
-            <a href="#" onclick="changeLanguage('de')" class="language-option {% if get_locale() == 'de' %}active{% endif %}">
-                <span class="flag">🇩🇪</span> Deutsch
-            </a>
-            <a href="#" onclick="changeLanguage('it')" class="language-option {% if get_locale() == 'it' %}active{% endif %}">
-                <span class="flag">🇮🇹</span> Italiano
-            </a>
-            <a href="#" onclick="changeLanguage('ar')" class="language-option {% if get_locale() == 'ar' %}active{% endif %}">
-                <span class="flag">🇸🇦</span> العربية
-            </a>
-        </div>
-    </div>
 
     <!-- Floating Contact Icons -->
     <div class="floating-contacts">
@@ -97,11 +74,5 @@
     </div>
 
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
-    <script>
-        function changeLanguage(lang) {
-            window.location.href = "{{ url_for('set_language', language='LANG') }}".replace('LANG', lang) + 
-                                 '?redirect=' + encodeURIComponent(window.location.pathname + window.location.search);
-        }
-    </script>
 </body>
 </html>
