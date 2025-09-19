@@ -144,10 +144,24 @@
             const currentUrl = window.location.href;
             if (currentUrl.includes('translate.google.com')) {
                 // Extract the original URL from Google Translate URL
-                const urlMatch = currentUrl.match(/[?&]u=([^&]+)/);
+                // Try different URL parameter patterns used by Google Translate
+                let urlMatch = currentUrl.match(/[?&]u=([^&]+)/);
+                if (!urlMatch) {
+                    urlMatch = currentUrl.match(/translate\.google\.com\/translate\?[^&]*&u=([^&]+)/);
+                }
+                if (!urlMatch) {
+                    // Try to extract from the end of the URL after the last slash
+                    const urlParts = currentUrl.split('/');
+                    const lastPart = urlParts[urlParts.length - 1];
+                    if (lastPart && lastPart.includes('http')) {
+                        return decodeURIComponent(lastPart);
+                    }
+                }
                 if (urlMatch) {
                     return decodeURIComponent(urlMatch[1]);
                 }
+                // Fallback: return your site's base URL
+                return window.location.protocol + '//' + window.location.host.replace(/^translate\.google\.com/, '') + '/';
             }
             return currentUrl;
         }
@@ -162,8 +176,16 @@
             }
             
             // Get the original URL (in case we're already on a translated page)
-            const originalUrl = getOriginalUrl();
-            const translateUrl = `https://translate.google.com/translate?sl=en&tl=${targetLang}&u=${encodeURIComponent(originalUrl)}`;
+            let originalUrl = getOriginalUrl();
+            
+            // Ensure we have a clean URL (remove any Google Translate artifacts)
+            if (originalUrl.includes('translate.google.com')) {
+                // Fallback to your site's base URL if extraction fails
+                originalUrl = window.location.protocol + '//' + window.location.host + '/';
+            }
+            
+            // Create the translation URL
+            const translateUrl = `https://translate.google.com/translate?sl=auto&tl=${targetLang}&u=${encodeURIComponent(originalUrl)}`;
             
             // Navigate to translated page
             window.location.href = translateUrl;
