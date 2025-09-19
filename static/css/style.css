@@ -339,6 +339,11 @@ section h2 {
     color: white;
 }
 
+.contact-icon.ai-assistant {
+    background: rgba(16, 185, 129, 0.9);
+    color: white;
+}
+
 .translate-dropdown {
     position: absolute;
     bottom: 70px;
@@ -377,6 +382,148 @@ section h2 {
 .translate-option .flag {
     margin-right: 12px;
     font-size: 1.2rem;
+}
+
+/* AI Assistant Styles */
+.ai-assistant-container {
+    position: relative;
+}
+
+.ai-assistant-panel {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    width: 350px;
+    max-height: 500px;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    z-index: 1001;
+    display: flex;
+    flex-direction: column;
+}
+
+.ai-header {
+    padding: 20px 20px 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.ai-header h3 {
+    margin: 0 0 5px 0;
+    color: #1d1d1f;
+    font-size: 1.2rem;
+}
+
+.ai-header p {
+    margin: 0;
+    color: #6e6e73;
+    font-size: 0.9rem;
+}
+
+.ai-chat-container {
+    flex: 1;
+    padding: 15px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ai-message {
+    padding: 12px 15px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    max-width: 85%;
+}
+
+.ai-message.user {
+    background: #0071e3;
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.ai-message.assistant {
+    background: rgba(16, 185, 129, 0.1);
+    color: #1d1d1f;
+    align-self: flex-start;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.ai-input-container {
+    padding: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+}
+
+.ai-input-container input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.ai-input-container input:focus {
+    border-color: #10b981;
+}
+
+.ai-send-btn {
+    background: #10b981;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.ai-send-btn:hover {
+    background: #059669;
+}
+
+.tour-recommendation {
+    background: rgba(0, 113, 227, 0.05);
+    border: 1px solid rgba(0, 113, 227, 0.2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+.tour-recommendation h4 {
+    margin: 0 0 5px 0;
+    color: #0071e3;
+    font-size: 0.9rem;
+}
+
+.tour-recommendation p {
+    margin: 0 0 8px 0;
+    font-size: 0.8rem;
+    color: #6e6e73;
+}
+
+.tour-recommendation .tour-link {
+    display: inline-block;
+    background: #0071e3;
+    color: white;
+    padding: 4px 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease;
+}
+
+.tour-recommendation .tour-link:hover {
+    background: #0056b3;
 }
 
 /* Floating Contact Icons */
@@ -715,6 +862,12 @@ section h2 {
     .language-dropdown {
         right: -10px;
         min-width: 140px;
+        bottom: 60px;
+    }
+
+    .ai-assistant-panel {
+        width: 300px;
+        right: -10px;
         bottom: 60px;
     }
 
