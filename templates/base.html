@@ -59,41 +59,41 @@
     </footer>
 
 
-    <!-- Floating Translation Button -->
-    <div class="floating-translate">
-        <div class="translate-toggle" id="translate-toggle" onclick="toggleTranslateOptions()">
-            <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
-            </svg>
-            <span>Translate</span>
-        </div>
-        <div class="translate-dropdown" id="translate-dropdown" style="display: none;">
-            <a href="#" onclick="translatePage('de')" class="translate-option">
-                <span class="flag">🇩🇪</span> Deutsch
-            </a>
-            <a href="#" onclick="translatePage('it')" class="translate-option">
-                <span class="flag">🇮🇹</span> Italiano
-            </a>
-            <a href="#" onclick="translatePage('es')" class="translate-option">
-                <span class="flag">🇪🇸</span> Español
-            </a>
-            <a href="#" onclick="translatePage('fr')" class="translate-option">
-                <span class="flag">🇫🇷</span> Français
-            </a>
-            <a href="#" onclick="translatePage('ar')" class="translate-option">
-                <span class="flag">🇸🇦</span> العربية
-            </a>
-            <a href="#" onclick="translatePage('zh')" class="translate-option">
-                <span class="flag">🇨🇳</span> 中文
-            </a>
-            <a href="#" onclick="translatePage('ru')" class="translate-option">
-                <span class="flag">🇷🇺</span> Русский
-            </a>
-        </div>
-    </div>
-
     <!-- Floating Contact Icons -->
     <div class="floating-contacts">
+        <div class="translate-container">
+            <div class="contact-icon translate" id="translate-toggle" onclick="toggleTranslateOptions()">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/>
+                </svg>
+            </div>
+            <div class="translate-dropdown" id="translate-dropdown" style="display: none;">
+                <a href="#" onclick="goToOriginal(event)" class="translate-option original">
+                    <span class="flag">🇺🇸</span> English (Original)
+                </a>
+                <a href="#" onclick="translatePage(event, 'de')" class="translate-option">
+                    <span class="flag">🇩🇪</span> Deutsch
+                </a>
+                <a href="#" onclick="translatePage(event, 'it')" class="translate-option">
+                    <span class="flag">🇮🇹</span> Italiano
+                </a>
+                <a href="#" onclick="translatePage(event, 'es')" class="translate-option">
+                    <span class="flag">🇪🇸</span> Español
+                </a>
+                <a href="#" onclick="translatePage(event, 'fr')" class="translate-option">
+                    <span class="flag">🇫🇷</span> Français
+                </a>
+                <a href="#" onclick="translatePage(event, 'ar')" class="translate-option">
+                    <span class="flag">🇸🇦</span> العربية
+                </a>
+                <a href="#" onclick="translatePage(event, 'zh')" class="translate-option">
+                    <span class="flag">🇨🇳</span> 中文
+                </a>
+                <a href="#" onclick="translatePage(event, 'ru')" class="translate-option">
+                    <span class="flag">🇷🇺</span> Русский
+                </a>
+            </div>
+        </div>
         <a href="https://wa.me/+35569123456" class="contact-icon whatsapp" target="_blank">
             <svg viewBox="0 0 24 24" fill="currentColor">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
@@ -110,19 +110,53 @@
     <script>
         function toggleTranslateOptions() {
             const dropdown = document.getElementById('translate-dropdown');
-            dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+            if (dropdown) {
+                dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
+            }
         }
 
-        function translatePage(targetLang) {
+        function getOriginalUrl() {
+            // Check if we're on a translated page
+            const currentUrl = window.location.href;
+            if (currentUrl.includes('translate.google.com')) {
+                // Extract the original URL from Google Translate URL
+                const urlMatch = currentUrl.match(/[?&]u=([^&]+)/);
+                if (urlMatch) {
+                    return decodeURIComponent(urlMatch[1]);
+                }
+            }
+            return currentUrl;
+        }
+
+        function translatePage(event, targetLang) {
+            event.preventDefault();
+            
             // Close the dropdown
-            document.getElementById('translate-dropdown').style.display = 'none';
+            const dropdown = document.getElementById('translate-dropdown');
+            if (dropdown) {
+                dropdown.style.display = 'none';
+            }
             
-            // Use Google Translate to translate the page
-            const currentUrl = encodeURIComponent(window.location.href);
-            const translateUrl = `https://translate.google.com/translate?sl=en&tl=${targetLang}&u=${currentUrl}`;
+            // Get the original URL (in case we're already on a translated page)
+            const originalUrl = getOriginalUrl();
+            const translateUrl = `https://translate.google.com/translate?sl=en&tl=${targetLang}&u=${encodeURIComponent(originalUrl)}`;
             
-            // Open translated page in the same window
+            // Navigate to translated page
             window.location.href = translateUrl;
+        }
+
+        function goToOriginal(event) {
+            event.preventDefault();
+            
+            // Close the dropdown
+            const dropdown = document.getElementById('translate-dropdown');
+            if (dropdown) {
+                dropdown.style.display = 'none';
+            }
+            
+            // Get the original URL and navigate to it
+            const originalUrl = getOriginalUrl();
+            window.location.href = originalUrl;
         }
 
         // Close dropdown when clicking outside
@@ -130,8 +164,20 @@
             const translateToggle = document.getElementById('translate-toggle');
             const translateDropdown = document.getElementById('translate-dropdown');
             
-            if (!translateToggle.contains(event.target) && !translateDropdown.contains(event.target)) {
+            if (translateToggle && translateDropdown && 
+                !translateToggle.contains(event.target) && 
+                !translateDropdown.contains(event.target)) {
                 translateDropdown.style.display = 'none';
+            }
+        });
+
+        // Add keyboard support
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                const dropdown = document.getElementById('translate-dropdown');
+                if (dropdown && dropdown.style.display === 'block') {
+                    dropdown.style.display = 'none';
+                }
             }
         });
     </script>
