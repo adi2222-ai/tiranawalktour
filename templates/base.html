@@ -140,16 +140,19 @@
         }
 
         function getOriginalUrl() {
-            const currentUrl = window.location.href;
+            // Always return the current page URL, removing any Google Translate parameters
+            let url = window.location.href;
             
-            // If we're not on a translated page, return current URL
-            if (!currentUrl.includes('translate.google')) {
-                return currentUrl;
+            // If we're on a translated page, extract the original URL
+            if (url.includes('translate.google.com')) {
+                // Try to extract the original URL from Google Translate
+                const match = url.match(/[?&]u=([^&]+)/);
+                if (match) {
+                    return decodeURIComponent(match[1]);
+                }
             }
             
-            // Simple extraction: get the base domain
-            const baseUrl = window.location.protocol + '//' + window.location.hostname.split('.').pop() + '/';
-            return 'https://d80--4641--89ec--4137b337998a--00--kdzr0a0jkiw1-kirk-replit-dev/';
+            return url;
         }
 
         function translatePage(event, targetLang) {
@@ -161,8 +164,13 @@
                 dropdown.style.display = 'none';
             }
             
-            // Always use the original site URL for translation
-            const originalUrl = 'https://d80--4641--89ec--4137b337998a--00--kdzr0a0jkiw1-kirk-replit-dev/';
+            // Get the current page URL (clean version)
+            let originalUrl = getOriginalUrl();
+            
+            // Make sure we have a clean URL without Google Translate artifacts
+            if (originalUrl.includes('translate.google.com') || originalUrl.includes('_x_tr_')) {
+                originalUrl = window.location.origin + window.location.pathname;
+            }
             
             // Create translation URL
             const translateUrl = `https://translate.google.com/translate?sl=auto&tl=${targetLang}&u=${encodeURIComponent(originalUrl)}`;
@@ -180,8 +188,16 @@
                 dropdown.style.display = 'none';
             }
             
+            // Get clean original URL
+            let originalUrl = getOriginalUrl();
+            
+            // If still on translate.google.com, go to site root
+            if (originalUrl.includes('translate.google.com')) {
+                originalUrl = window.location.origin;
+            }
+            
             // Navigate to original URL
-            window.location.href = 'https://d80--4641--89ec--4137b337998a--00--kdzr0a0jkiw1-kirk-replit-dev/';
+            window.location.href = originalUrl;
         }
 
         // Close dropdown when clicking outside
