@@ -92,6 +92,10 @@
                 <a href="#" onclick="translatePage(event, 'ru')" class="translate-option">
                     <span class="flag">🇷🇺</span> Русский
                 </a>
+                <div class="translate-separator"></div>
+                <a href="#" onclick="openAlternativeTranslation(event)" class="translate-option alternative">
+                    <span class="flag">🌐</span> Alternative Translator
+                </a>
             </div>
         </div>
         <div class="ai-assistant-container">
@@ -140,29 +144,36 @@
         }
 
         function getOriginalUrl() {
-            // Check if we're on a translated page
-            const currentUrl = window.location.href;
+            // Always return the current clean URL without translation parameters
+            let currentUrl = window.location.href;
+            
+            // Remove Google Translate artifacts
             if (currentUrl.includes('translate.google.com')) {
-                // Extract the original URL from Google Translate URL
-                // Try different URL parameter patterns used by Google Translate
-                let urlMatch = currentUrl.match(/[?&]u=([^&]+)/);
-                if (!urlMatch) {
-                    urlMatch = currentUrl.match(/translate\.google\.com\/translate\?[^&]*&u=([^&]+)/);
+                // Extract original URL from various Google Translate patterns
+                let originalUrl = '';
+                
+                // Pattern 1: ?u= parameter
+                let match = currentUrl.match(/[?&]u=([^&]+)/);
+                if (match) {
+                    originalUrl = decodeURIComponent(match[1]);
                 }
-                if (!urlMatch) {
-                    // Try to extract from the end of the URL after the last slash
-                    const urlParts = currentUrl.split('/');
-                    const lastPart = urlParts[urlParts.length - 1];
-                    if (lastPart && lastPart.includes('http')) {
-                        return decodeURIComponent(lastPart);
+                
+                // Pattern 2: Direct URL in path
+                if (!originalUrl) {
+                    match = currentUrl.match(/translate\.google\.com\/translate_p\?[^#]*#auto\/[^\/]+\/(.+)/);
+                    if (match) {
+                        originalUrl = decodeURIComponent(match[1]);
                     }
                 }
-                if (urlMatch) {
-                    return decodeURIComponent(urlMatch[1]);
+                
+                // Fallback: construct base URL
+                if (!originalUrl || originalUrl.includes('translate.google.com')) {
+                    originalUrl = window.location.protocol + '//' + window.location.host.replace('translate.google.com', 'your-domain.repl.co');
                 }
-                // Fallback: return your site's base URL
-                return window.location.protocol + '//' + window.location.host.replace(/^translate\.google\.com/, '') + '/';
+                
+                return originalUrl;
             }
+            
             return currentUrl;
         }
 
@@ -175,20 +186,38 @@
                 dropdown.style.display = 'none';
             }
             
-            // Get the original URL (in case we're already on a translated page)
-            let originalUrl = getOriginalUrl();
+            // Get current clean URL
+            let currentUrl = window.location.href;
             
-            // Ensure we have a clean URL (remove any Google Translate artifacts)
-            if (originalUrl.includes('translate.google.com')) {
-                // Fallback to your site's base URL if extraction fails
-                originalUrl = window.location.protocol + '//' + window.location.host + '/';
+            // If we're already on a translated page, get the original
+            if (currentUrl.includes('translate.google.com')) {
+                currentUrl = getOriginalUrl();
             }
             
-            // Create the translation URL
-            const translateUrl = `https://translate.google.com/translate?sl=auto&tl=${targetLang}&u=${encodeURIComponent(originalUrl)}`;
+            // Try different translation methods
+            const methods = [
+                // Method 1: Direct Google Translate link
+                `https://translate.google.com/translate?sl=auto&tl=${targetLang}&u=${encodeURIComponent(currentUrl)}`,
+                // Method 2: Alternative Google Translate format
+                `https://translate.google.com/translate?hl=en&sl=auto&tl=${targetLang}&u=${encodeURIComponent(currentUrl)}&sandbox=1`,
+                // Method 3: Embedded widget approach
+                `https://translate.googleusercontent.com/translate_c?depth=1&hl=en&rurl=translate.google.com&sl=auto&sp=nmt4&tl=${targetLang}&u=${encodeURIComponent(currentUrl)}&usg=ALkJrhhBFgHRkCjSjwGcKGKSMKMWrOhiqA`
+            ];
             
-            // Navigate to translated page
-            window.location.href = translateUrl;
+            // Try the first method
+            let translateUrl = methods[0];
+            
+            // Add a small delay and try to navigate
+            try {
+                window.open(translateUrl, '_self');
+            } catch (error) {
+                // If first method fails, try opening in new tab
+                const newWindow = window.open(translateUrl, '_blank');
+                if (!newWindow) {
+                    // If popup blocked, show user message
+                    alert('Translation blocked. Please allow popups and try again, or copy this URL: ' + translateUrl);
+                }
+            }
         }
 
         function goToOriginal(event) {
@@ -202,7 +231,13 @@
             
             // Get the original URL and navigate to it
             const originalUrl = getOriginalUrl();
-            window.location.href = originalUrl;
+            
+            // If we're already on original, just reload
+            if (!window.location.href.includes('translate.google.com')) {
+                window.location.reload();
+            } else {
+                window.location.href = originalUrl;
+            }
         }
 
         // Close dropdown when clicking outside
@@ -230,6 +265,55 @@
                 }
             }
         });
+
+        // Alternative translation function
+        function openAlternativeTranslation(event) {
+            event.preventDefault();
+            
+            // Close the dropdown
+            const dropdown = document.getElementById('translate-dropdown');
+            if (dropdown) {
+                dropdown.style.display = 'none';
+            }
+            
+            // Get current URL
+            let currentUrl = window.location.href;
+            if (currentUrl.includes('translate.google.com')) {
+                currentUrl = getOriginalUrl();
+            }
+            
+            // Show language selection modal
+            const languages = [
+                { code: 'de', name: 'Deutsch', flag: '🇩🇪' },
+                { code: 'it', name: 'Italiano', flag: '🇮🇹' },
+                { code: 'es', name: 'Español', flag: '🇪🇸' },
+                { code: 'fr', name: 'Français', flag: '🇫🇷' },
+                { code: 'ar', name: 'العربية', flag: '🇸🇦' },
+                { code: 'zh', name: '中文', flag: '🇨🇳' },
+                { code: 'ru', name: 'Русский', flag: '🇷🇺' }
+            ];
+            
+            let options = 'Choose a language:\n\n';
+            languages.forEach((lang, index) => {
+                options += `${index + 1}. ${lang.flag} ${lang.name}\n`;
+            });
+            
+            const choice = prompt(options + '\nEnter number (1-7):');
+            const selectedLang = languages[parseInt(choice) - 1];
+            
+            if (selectedLang) {
+                // Use Microsoft Translator as alternative
+                const microsoftUrl = `https://www.translatetheweb.com/?from=auto&to=${selectedLang.code}&a=${encodeURIComponent(currentUrl)}`;
+                
+                // Try opening with Microsoft Translator
+                const newWindow = window.open(microsoftUrl, '_blank');
+                if (!newWindow) {
+                    // If blocked, provide manual link
+                    const manualLink = `https://translate.bing.com/translator?from=auto&to=${selectedLang.code}&text=${encodeURIComponent(currentUrl)}`;
+                    alert(`Translation service blocked. Please visit: ${manualLink}`);
+                }
+            }
+        }
 
         // AI Assistant functionality
         function toggleAIAssistant() {
