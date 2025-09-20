@@ -1,6 +1,46 @@
 
 [
   {
+  "id": "custom-tour-albania",
+  "title": "Your Custom Albania Experience",
+  "short_description": "Design your own Albania adventure tailored to your budget and interests! Choose from cultural, culinary, and nature-focused tours.",
+  "long_description": "Are you looking to experience Albania at your own pace and according to your preferences? We offer a wide range of flexible tour options, whether you’re passionate about history, culture, food, or nature. Whether you want to explore Tirana’s vibrant streets, taste fresh coastal seafood, hike through lush valleys, or visit ancient archaeological sites, we’ll craft the perfect experience for you. Simply get in touch with us via email to discuss your ideal itinerary, and we’ll tailor a tour that suits your budget, time, and interests.",
+  "price": "Varies",
+  "duration": "Flexible",
+  "starting_point": "Flexible",
+  "schedule": [
+    "By Appointment"
+  ],
+    "images": [
+    "https://theholisticbackpacker.com/wp-content/uploads/2022/08/MG_1052-1024x683.jpg",
+    "https://theholisticbackpacker.com/wp-content/uploads/2022/08/MG_0995-1024x683.jpg"
+
+  ],
+  "highlights": [
+    "Create your own custom itinerary based on your interests",
+    "Choose from cultural, culinary, and adventure-based experiences",
+    "Flexible duration to fit your schedule and budget",
+    "Guided tours led by local experts for an authentic experience",
+    "Explore Albania’s best attractions at your own pace"
+  ],
+  "included": [
+    "Tailored tour itinerary based on your preferences",
+    "Personalized guide with deep local knowledge",
+    "Transportation and accommodation options (if needed)",
+    "All food, drink, and entry fees based on selected activities"
+  ],
+  "meeting_point_details": "Meeting point is flexible and will be confirmed once your custom tour is designed. Whether it’s a hotel pick-up, a specific landmark, or a tour departure location of your choice, we’ll make it easy for you!",
+  "languages": [
+    "English",
+    "Albanian"
+  ],
+  "contact_info": {
+    "email": "info@albaniawalkingtour.com",
+    "phone": "+355 69 944 4030"
+  }
+},
+
+  {
     "id": "albania-week-tour",
     "title": "Albania Discovery Week - 6 Days Complete Tour",
     "short_description": "Experience the best of Albania in 6 unforgettable days - from Tirana's history to the Albanian Riviera's stunning beaches.",
@@ -301,7 +341,7 @@
       "Small group experience (max 15 people)",
       "Traditional Albanian coffee break"
     ],
-    "meeting_point_details": "Meet at the Skanderbeg Monument in the center of Skanderbeg Square. Look for the guide with a red umbrella.",
+    "meeting_point_details": "Meet at the Skanderbeg Monument in the center of Skanderbeg Square.",
     "languages": [
       "English",
       "Albanian"
@@ -379,7 +419,297 @@
       "Traditional 3-course lunch",
       "Recipe cards to take home"
     ],
-    "meeting_point_details": "Meet at the main entrance of New Bazaar (Pazari i Ri) near the fountain. Look for the guide with a green apron.",
+    "meeting_point_details": "Meet at the main entrance of New Bazaar (Pazari i Ri) near the fountain.",
+    "languages": [
+      "English",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "tirana-food-culture",
+    "title": "Tirana Food & Culture Immersion",
+    "short_description": "Savor authentic Albanian flavors while exploring vibrant markets, traditional eateries, and cultural landmarks.",
+    "long_description": "Delve into Albania’s rich culinary heritage with this immersive food and culture tour. Wander through bustling local markets, enjoy mouthwatering traditional dishes, and discover the fascinating history behind Albania’s coffee culture. This journey blends Ottoman, Italian, and Balkan influences into every bite, offering a true taste of Tirana’s cultural diversity.",
+    "price": 55,
+    "duration": "4.5 hours",
+    "starting_point": "New Bazaar (Pazari i Ri)",
+    "schedule": [
+      "2025-09-15T11:00:00",
+      "2025-09-16T11:00:00",
+      "2025-09-17T11:00:00"
+    ],
+    "images": [
+      "https://wia.al/wp-content/uploads/2024/10/Albanian_food_dishes.jpg",
+      "https://www.ariatravelalbania.com/wp-content/uploads/2024/03/mrizi_zanave_table_organic_food.jpeg.webp"
+    ],
+    "highlights": [
+      "Explore the fresh, vibrant New Bazaar market",
+      "Taste traditional byrek and fresh bakery delights",
+      "Experience the ritual of an Albanian coffee ceremony",
+      "Dine at iconic local restaurants serving authentic dishes",
+      "Enjoy a raki tasting, Albania's signature spirit",
+      "Participate in a traditional cooking demonstration",
+      "Visit a local family kitchen for an intimate experience"
+    ],
+    "included": [
+      "Expert food guide",
+      "All food and drink tastings",
+      "Guided market tour with insights into local ingredients",
+      "Traditional 3-course lunch featuring Albanian staples",
+      "Recipe cards to recreate the experience at home"
+    ],
+    "meeting_point_details": "Meet at the main entrance of New Bazaar (Pazari i Ri), near the fountain.",
+    "languages": [
+      "English",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "gjirokaster-culture-tour",
+    "title": "Gjirokastër Cultural & Culinary Expedition",
+    "short_description": "Step back in time and savor the authentic tastes of Gjirokastër, a UNESCO World Heritage gem.",
+    "long_description": "Journey to Gjirokastër, Albania’s 'City of Stone,' where centuries of history meet rich culinary traditions. Walk through its ancient streets, explore the iconic castle, and feast on the region's unique flavors. From savory stews to grilled delicacies, this tour offers a truly immersive experience of both culture and cuisine.",
+    "price": 70,
+    "duration": "5 hours",
+    "starting_point": "Gjirokastër Old Bazaar",
+    "schedule": [
+      "2025-09-18T10:00:00",
+      "2025-09-19T10:00:00",
+      "2025-09-20T10:00:00"
+    ],
+    "images": [
+      "https://i0.wp.com/feel-albania.com/wp-content/uploads/2019/10/Gjirokaster-City-in-UNESCO.jpg?fit=1800%2C1200&ssl=1",
+      "https://lovealbania.al/wp-content/uploads/2025/04/gjirokaster-gjirokastercastle-restaurant-foodporn-edited-768x432.jpg"
+    ],
+    "highlights": [
+      "Visit the majestic Gjirokastër Castle, a symbol of the city’s past",
+      "Indulge in traditional Gjirokastër delicacies",
+      "Stroll through the charming Old Bazaar with its stone streets",
+      "Learn about local culinary traditions and techniques",
+      "Taste regional specialties like qifqi (rice balls) and grilled meats"
+    ],
+    "included": [
+      "Guided tour with a local expert",
+      "All food and drink tastings",
+      "Entry fee to Gjirokastër Castle",
+      "Traditional 3-course lunch featuring local dishes",
+      "Recipe cards for classic Gjirokastër meals"
+    ],
+    "meeting_point_details": "Meet at the entrance of Gjirokastër Old Bazaar, near the fountain. Your guide will be wearing a blue hat.",
+    "languages": [
+      "English",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "albanian-coastline-tasting",
+    "title": "Albanian Coastline Seafood Discovery",
+    "short_description": "Savor the best of Albania’s coastal cuisine while exploring its stunning seaside towns.",
+    "long_description": "Experience the fresh, vibrant flavors of Albania’s coastline. From Durrës to Ksamil, this tour takes you through picturesque seaside towns where you’ll enjoy seafood delicacies, local olives, and Mediterranean-inspired dishes. Relax by the beach as you sample some of the freshest fish and traditional mezze dishes.",
+    "price": 75,
+    "duration": "6 hours",
+    "starting_point": "Durrës Port",
+    "schedule": [
+      "2025-09-22T12:00:00",
+      "2025-09-23T12:00:00",
+      "2025-09-24T12:00:00"
+    ],
+    "images": [
+      "https://joujoutravels.com/wp-content/uploads/2025/07/guvat-restaurant-best-places-to-eat-ksamil-albania.jpg",
+      "https://joujoutravels.com/wp-content/uploads/2025/07/best-traditional-food-Gjirokaster-albania.jpg"
+    ],
+    "highlights": [
+      "Taste fresh seafood at local markets",
+      "Sample traditional Albanian mezze dishes",
+      "Relax in Ksamil, enjoying beachside seafood dining",
+      "Pair your meal with wines from local vineyards",
+      "Enjoy a cooking demonstration of coastal dishes"
+    ],
+    "included": [
+      "Expert guide",
+      "Seafood tastings at local markets",
+      "Wine pairing with local varieties",
+      "3-course seafood lunch with stunning views",
+      "Hands-on cooking demonstration"
+    ],
+    "meeting_point_details": "Meet at Durrës Port, near the entrance. Your guide will be holding a red umbrella.",
+    "languages": [
+      "English",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "albanian-wine-tour",
+    "title": "Albanian Wine & Olive Oil Experience",
+    "short_description": "Uncover the ancient traditions of Albanian wine-making and olive oil production.",
+    "long_description": "Take a journey into Albania’s ancient wine culture and olive oil heritage. Visit centuries-old vineyards and olive farms, sample wines made from indigenous grape varieties, and experience the art of organic olive oil production. End your day with a delicious meal paired with local wines.",
+    "price": 80,
+    "duration": "5 hours",
+    "starting_point": "Berat Wine Museum",
+    "schedule": [
+      "2025-09-25T09:30:00",
+      "2025-09-26T09:30:00",
+      "2025-09-27T09:30:00"
+    ],
+    "images": [
+      "https://joujoutravels.com/wp-content/uploads/2025/07/best-restaurants-albania-the-barrels-winery.jpg",
+      "https://joujoutravels.com/wp-content/uploads/2025/07/the-barrels-winery-albania-restaurants-.jpg"
+    ],
+    "highlights": [
+      "Visit local wineries and sample indigenous wines",
+      "Learn the art of olive oil production at an organic farm",
+      "Explore Berat’s historical landmarks",
+      "Savor a 3-course meal paired with local wines",
+      "Participate in a cooking class with regional ingredients"
+    ],
+    "included": [
+      "Wine and olive oil tastings",
+      "Guided tour of Berat’s ancient sites",
+      "3-course lunch with wine pairings",
+      "Transportation to wineries and olive farms"
+    ],
+    "meeting_point_details": "Meet at the Berat Wine Museum entrance.",
+    "languages": [
+      "English",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "valbona-hiking-tour",
+    "title": "Valbona Valley Hiking & Culinary Escape",
+    "short_description": "Embark on a scenic hike through Valbona Valley, followed by a hearty traditional mountain meal.",
+    "long_description": "Discover the natural beauty of Valbona Valley through an invigorating hike, where you’ll be surrounded by breathtaking landscapes. Afterward, treat yourself to a traditional Albanian mountain feast, featuring locally sourced cheese, meats, and fresh produce.",
+    "price": 90,
+    "duration": "7 hours",
+    "starting_point": "Valbona Village",
+    "schedule": [
+      "2025-10-01T08:30:00",
+      "2025-10-02T08:30:00",
+      "2025-10-03T08:30:00"
+    ],
+    "images": [
+       "https://www.visitalbania.app/wp-content/uploads/2022/07/valbona-tourism-3.jpg",
+       "https://theholisticbackpacker.com/wp-content/uploads/2024/06/MG_1402-1024x1536.jpg"
+    ],
+    "highlights": [
+      "Guided hike through the pristine Valbona Valley",
+      "Taste local cheese and cured meats",
+      "Picnic by the river with fresh mountain produce",
+      "Feast on a traditional Albanian mountain meal",
+      "Learn about regional farming traditions"
+    ],
+    "included": [
+      "Hiking guide",
+      "Food tastings from local producers",
+      "Traditional mountain meal",
+      "Picnic lunch featuring local specialties"
+    ],
+    "meeting_point_details": "Meet at the entrance of Valbona Village. Your guide will be wearing hiking gear and a green jacket.",
+    "languages": [
+      "English",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "tirana-city-tour",
+    "title": "Tirana City Culture & Culinary Adventure",
+    "short_description": "Discover the cultural heart of Albania while indulging in Tirana’s vibrant food scene.",
+    "long_description": "Explore Tirana's most iconic cultural landmarks while savoring the flavors of the city’s best street food and local delicacies. This walking tour takes you from historical sites to trendy eateries, offering a perfect mix of history and gastronomy.",
+    "price": 50,
+    "duration": "4 hours",
+    "starting_point": "Skanderbeg Square",
+    "schedule": [
+      "2025-10-05T14:00:00",
+      "2025-10-06T14:00:00",
+      "2025-10-07T14:00:00"
+    ],
+    "images": [
+      "https://lp-cms-production.imgix.net/2019-06/25e80d94ce0c6dfee0634a2b8598feae-tirana.jpg?auto=format,compress&q=72&w=1095&fit=crop&crop=faces,edges",
+      "https://www.anitahendrieka.com/wp-content/webp-express/webp-images/uploads/2022/01/DSC03112-1440x960.jpg.webp"
+    ],
+    "highlights": [
+      "Visit Skanderbeg Square and the National History Museum",
+      "Taste delicious traditional Albanian street food",
+      "Stop at a local bakery for a warm byrek tasting",
+      "Experience an authentic Albanian coffee ceremony",
+      "Explore vibrant cafes and local eateries"
+    ],
+    "included": [
+      "Expert guide",
+      "Food and drink tastings",
+      "Entry fees to cultural sites",
+      "Traditional Albanian lunch"
+    ],
+    "meeting_point_details": "Meet at Skanderbeg Square, near the statue of Skanderbeg.",
+    "languages": [
+      "English",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "berat-wine-tour",
+    "title": "Berat Wine & History Experience",
+    "short_description": "Uncover the rich history of Berat while indulging in its exquisite wines.",
+    "long_description": "Explore the UNESCO World Heritage town of Berat, known as the 'City of a Thousand Windows.' After wandering through its historical sites, immerse yourself in Albania’s wine culture with a wine-tasting session at a local vineyard, paired with regional dishes.",
+    "price": 75,
+    "duration": "5 hours",
+    "starting_point": "Berat Castle",
+    "schedule": [
+      "2025-10-08T10:00:00",
+      "2025-10-09T10:00:00",
+      "2025-10-10T10:00:00"
+    ],
+    "images": [
+      "https://joujoutravels.com/wp-content/uploads/2025/07/the-barrels-winery-albania-restaurants-.jpg",
+      "https://joujoutravels.com/wp-content/uploads/2025/07/best-restaurants-albania-the-barrels-winery.jpg"
+    ],
+    "highlights": [
+      "Visit Berat Castle and the picturesque Mangalem Quarter",
+      "Wine tasting at a local vineyard with stunning views",
+      "Explore Berat’s UNESCO World Heritage sites",
+      "Sample authentic Albanian dishes paired with local wine"
+    ],
+    "included": [
+      "Professional guide",
+      "Wine tasting at a local vineyard",
+      "Entry to Berat Castle",
+      "Traditional Albanian lunch"
+    ],
+    "meeting_point_details": "Meet at the entrance of Berat Castle. Your guide will be wearing a red jacket.",
+    "languages": [
+      "English",
+      "Albanian"
+    ]
+  },
+  {
+    "id": "butrint-archaeological-tour",
+    "title": "Butrint Archaeological & Cultural Expedition",
+    "short_description": "Explore the UNESCO-listed ruins of Butrint, a fascinating site rich in history and natural beauty.",
+    "long_description": "Step into the ancient world with a visit to Butrint, where history spans from Roman to Ottoman times. Discover the impressive ruins, learn about the city’s cultural layers, and enjoy the stunning natural scenery surrounding this UNESCO World Heritage site.",
+    "price": 65,
+    "duration": "4 hours",
+    "starting_point": "Butrint Entrance",
+    "schedule": [
+      "2025-10-11T09:30:00",
+      "2025-10-12T09:30:00",
+      "2025-10-13T09:30:00"
+    ],
+    "images": [
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5c.jpg",
+      "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5b.jpg"
+    ],
+    "highlights": [
+      "Guided tour of the fascinating Butrint archaeological site",
+      "Explore the ancient theater, basilica, and more",
+      "Wander through UNESCO World Heritage ruins",
+      "Learn the captivating history of Butrint’s past"
+    ],
+    "included": [
+      "Professional guide",
+      "Entry to Butrint Archaeological Site",
+      "Traditional Albanian snacks"
+    ],
+    "meeting_point_details": "Meet at the entrance of Butrint Archaeological Park.",
     "languages": [
       "English",
       "Albanian"
