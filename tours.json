@@ -1,72 +1,89 @@
 
 [
-  { 
+ { 
   "id": "theth-tirane-berat-tour",
   "title": "Theth, Tirane & Berat Cultural Adventure",
-  "short_description": "Discover the natural beauty of Theth and the historical cities of Tirane and Berat.",
-  "long_description": "A 6-day journey combining Albania’s rich culture, historic landmarks, and breathtaking mountain landscapes. Stay in charming accommodations and experience authentic traditions.",
-  "price": 0,
-  "duration": "6 days",
-  "starting_point": "Theth National Park Entrance",
+  "short_description": "Discover the natural beauty of Theth and the historical cities of Tirane, Berat, and Durres.",
+  "long_description": "A 6-day journey combining Albania’s rich culture, historic landmarks, and breathtaking mountain landscapes. Stay in charming accommodations and experience authentic traditions including local cuisine, mountain hikes, and historical tours.",
+  "price": "flexible",
+  "duration": "6 days / 5 nights",
+  "starting_point": "Tirana International Airport",
   "schedule": [
-    "2025-10-11T09:00:00",
-    "2025-10-12T09:00:00",
-    "2025-10-13T09:00:00"
+    "2025-10-11T16:00:00 - Day 1: Arrive at Mrizi Zanave Hotel, Dinner at 20:00",
+    "2025-10-12T07:30:00 - Day 2: Checkout, visit Rozafa Castle, arrive at Theth Alps, hotel check-in, visits to Thethi Church, Reconciliation Tower, and Grunas Waterfall, Dinner at 20:00",
+    "2025-10-13T07:00:00 - Day 3: Blue Eye Natural Spring hike, return to Tirana, hotel check-in, Albanian Traditional Festive Night, Dinner at 21:00",
+    "2025-10-14T08:00:00 - Day 4: Tirana walking tour, Bunk’Art Museum, Dajti Mountain cable car ride, Dinner at 20:00",
+    "2025-10-15T08:00:00 - Day 5: Depart for Berat with stop at Belsh Town, Berat Castle tour, explore old neighborhoods, transfer to Durres, hotel check-in, Dinner",
+    "2025-10-16T09:00:00 - Day 6: Durres city tour, checkout, transfer to airport at 12:00"
   ],
   "images": [
-    "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5c.jpg",
-    "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5b.jpg"
+    "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/12/24/16/tirana-overview.jpg?quality=75&width=1368&crop=3%3A2%2Csmart&auto=webp",
+    "https://xhuliocooks.com/wp-content/uploads/2022/06/Lunch-at-Mrizi-1024x798.jpg",
+    "https://images.myguide-cdn.com/albania/companies/mrizi-i-zanave/large/mrizi-i-zanave-1206196.jpg",
+    "https://www.snoezelsontheroad.com/wp-content/uploads/2023/10/coverfoto-albanie-hike.jpg"
   ],
   "highlights": [
-    "Day1 : Mrizi Zanave (1 night)",
-    "16:00:00 - Arriving at the hotel",
-    "20:00:00 - Dinner at the restaurant",
-    "Day 2 : Theth Alps (1 night)",
-    "07:30:00 - Checkout after breakfast"
+    "Day 1: Mrizi Zanave stay with dinner at a local restaurant",
+    "Day 2: Theth Alps adventure – Rozafa Castle, Thethi Church, Reconciliation Tower, Grunas Waterfall",
+    "Day 3: Blue Eye Natural Spring hike, return to Tirana, festive cultural night",
+    "Day 4: Tirana walking tour, Bunk’Art Museum, Dajti Mountain cable car",
+    "Day 5: Berat Castle, explore old neighborhoods, transfer to Durres",
+    "Day 6: Durres city tour and airport transfer"
   ],
   "included": [
     "Professional guide",
-    "Accommodation",
+    "Accommodation (5 nights)",
     "Breakfast and selected meals",
-    "Transport between destinations"
+    "Transport between destinations",
+    "Cultural experiences and entrance tickets to mentioned sites"
   ],
-  "meeting_point_details": "Meet at Theth National Park Entrance.",
+  "meeting_point_details": "Pickup and drop-off at Tirana International Airport",
   "languages": [
     "English",
     "Albanian"
   ]
 },
-{ 
-  "id": "tirane-berat-gjirokaster-sarand-tour",
-  "title": "Tirane, Berat, Gjirokaster & Sarand Heritage Tour",
-  "short_description": "An immersive cultural journey across Albania’s most iconic UNESCO cities and the Riviera.",
-  "long_description": "Explore Albania’s southern gems on this 6-day expedition. From the vibrant capital Tirane to the UNESCO treasures of Berat and Gjirokaster, ending with the coastal beauty of Sarand.",
-  "price": 0,
-  "duration": "6 days",
-  "starting_point": "Tirana International Hotel",
+{
+  "id": "tirana-berat-sarande-vlore-durres-tour",
+  "title": "Tirana, Berat, Sarande, Vlore & Durres Discovery Tour",
+  "short_description": "Explore Albania’s cultural treasures and coastal beauty in a 6-day adventure through Tirana, Berat, Gjirokaster, Sarande, Vlore, and Durres.",
+  "long_description": "This 6-day / 5-night tour combines Albania’s vibrant culture, historic cities, UNESCO World Heritage Sites, and breathtaking natural landmarks. From Tirana’s lively traditions to Berat’s Ottoman architecture, Gjirokaster’s fortress, Sarande’s Blue Eye Spring, Vlore’s coastal gems, and Durres’ Roman heritage, the journey is rich in culture and discovery.",
+  "price": "flexible",
+  "duration": "6 days / 5 nights",
+  "starting_point": "Tirana International Airport",
   "schedule": [
-    "2025-10-11T09:00:00",
-    "2025-10-12T09:00:00",
-    "2025-10-13T09:00:00"
+    "2025-10-11T17:00:00 - Day 1: Hotel check-in at Tirana International Hotel, Traditional Festive Night at 19:00, Dinner at 21:00",
+    "2025-10-12T07:00:00 - Day 2: Breakfast, Tirana walking tour, transfer to Berat via Belsh Town stop, arrive and explore Berat Castle, check in at Hotel Mangalemi, Dinner at 20:00",
+    "2025-10-13T07:00:00 - Day 3: Drive to Gjirokaster, Castle visit, explore old town & lunch, Blue Eye Natural Spring visit, Sarande hotel check-in at 18:00, Dinner at 20:00",
+    "2025-10-14T08:30:00 - Day 4: Visit Butrint ruins, Porto Palermo Castle stop, lunch in Dhermi, scenic drive to Vlore, hotel check-in at 16:00, Dinner at 20:00",
+    "2025-10-15T09:00:00 - Day 5: Visit Zvernec Monastery, Apollonia Archaeological Site, Karavasta Lagoon, continue to Durres, hotel check-in at 17:00, Dinner at 20:00",
+    "2025-10-16T09:00:00 - Day 6: Checkout, Durres city tour, transfer to airport at 12:00"
   ],
   "images": [
-    "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5c.jpg",
-    "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5b.jpg"
+    "https://static.independent.co.uk/s3fs-public/thumbnails/image/2018/12/24/16/tirana-overview.jpg?quality=75&width=1368&crop=3%3A2%2Csmart&auto=webp",
+    "https://upload.wikimedia.org/wikipedia/commons/8/8f/Berat_Panorama.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/e/e1/Castle_of_Gjirokast%C3%ABr%2C_Albania_2018.jpg",
+    "https://www.albania.al/wp-content/uploads/2020/05/blue-eye-1.jpg",
+    "https://www.intrepidtravel.com/adventures/wp-content/uploads/2019/09/albania_sarande_shutterstock_1189229182.jpg",
+    "https://www.intrepidtravel.com/adventures/wp-content/uploads/2020/05/vlore-albania.jpg",
+    "https://upload.wikimedia.org/wikipedia/commons/d/de/Durres_Amphitheatre.jpg"
   ],
   "highlights": [
-    "Day 1: Tirana (1 Night)",
-    "17:00:00 - Hotel Check in (Tirana International Hotel)",
-    "19:00:00 - Albanian Traditional Festive Night",
-    "21:00:00 - Diner at a Restaurant",
-    "Day 2: Berat (1 Night)"
+    "Day 1: Tirana – Hotel check-in, Traditional Festive Night, Dinner",
+    "Day 2: Berat – Tirana walking tour, stop in Belsh, Berat Castle, explore the city",
+    "Day 3: Gjirokaster & Sarande – Gjirokaster Castle, old town, Blue Eye Spring, Sarande stay",
+    "Day 4: Sarande, Dhermi & Vlore – Butrint ruins, Porto Palermo Castle, lunch in Dhermi, Vlore hotel",
+    "Day 5: Vlore, Apollonia & Durres – Zvernec Monastery, Apollonia, Karavasta Lagoon, Durres stay",
+    "Day 6: Durres – city tour and airport transfer"
   ],
   "included": [
     "Professional guide",
-    "Accommodation",
+    "Accommodation (5 nights)",
     "Breakfast and selected meals",
-    "Transport between destinations"
+    "Transport between destinations",
+    "Entrance tickets to listed attractions"
   ],
-  "meeting_point_details": "Meet at Tirana International Hotel.",
+  "meeting_point_details": "Pickup and drop-off at Tirana International Airport",
   "languages": [
     "English",
     "Albanian"
