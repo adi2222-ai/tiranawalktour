@@ -1,5 +1,78 @@
 
 [
+  { 
+  "id": "theth-tirane-berat-tour",
+  "title": "Theth, Tirane & Berat Cultural Adventure",
+  "short_description": "Discover the natural beauty of Theth and the historical cities of Tirane and Berat.",
+  "long_description": "A 6-day journey combining Albania’s rich culture, historic landmarks, and breathtaking mountain landscapes. Stay in charming accommodations and experience authentic traditions.",
+  "price": 0,
+  "duration": "6 days",
+  "starting_point": "Theth National Park Entrance",
+  "schedule": [
+    "2025-10-11T09:00:00",
+    "2025-10-12T09:00:00",
+    "2025-10-13T09:00:00"
+  ],
+  "images": [
+    "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5c.jpg",
+    "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5b.jpg"
+  ],
+  "highlights": [
+    "Day1 : Mrizi Zanave (1 night)",
+    "16:00:00 - Arriving at the hotel",
+    "20:00:00 - Dinner at the restaurant",
+    "Day 2 : Theth Alps (1 night)",
+    "07:30:00 - Checkout after breakfast"
+  ],
+  "included": [
+    "Professional guide",
+    "Accommodation",
+    "Breakfast and selected meals",
+    "Transport between destinations"
+  ],
+  "meeting_point_details": "Meet at Theth National Park Entrance.",
+  "languages": [
+    "English",
+    "Albanian"
+  ]
+},
+{ 
+  "id": "tirane-berat-gjirokaster-sarand-tour",
+  "title": "Tirane, Berat, Gjirokaster & Sarand Heritage Tour",
+  "short_description": "An immersive cultural journey across Albania’s most iconic UNESCO cities and the Riviera.",
+  "long_description": "Explore Albania’s southern gems on this 6-day expedition. From the vibrant capital Tirane to the UNESCO treasures of Berat and Gjirokaster, ending with the coastal beauty of Sarand.",
+  "price": 0,
+  "duration": "6 days",
+  "starting_point": "Tirana International Hotel",
+  "schedule": [
+    "2025-10-11T09:00:00",
+    "2025-10-12T09:00:00",
+    "2025-10-13T09:00:00"
+  ],
+  "images": [
+    "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5c.jpg",
+    "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6c/28/5b.jpg"
+  ],
+  "highlights": [
+    "Day 1: Tirana (1 Night)",
+    "17:00:00 - Hotel Check in (Tirana International Hotel)",
+    "19:00:00 - Albanian Traditional Festive Night",
+    "21:00:00 - Diner at a Restaurant",
+    "Day 2: Berat (1 Night)"
+  ],
+  "included": [
+    "Professional guide",
+    "Accommodation",
+    "Breakfast and selected meals",
+    "Transport between destinations"
+  ],
+  "meeting_point_details": "Meet at Tirana International Hotel.",
+  "languages": [
+    "English",
+    "Albanian"
+  ]
+},
+
   {
   "id": "custom-tour-albania",
   "title": "Your Custom Albania Experience",
